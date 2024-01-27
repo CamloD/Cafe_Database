@@ -34,9 +34,6 @@ namespace Cafe_DataBase.Forms
         string dato = "";
         int EstadoGuardar = 0;
         int codigo_registro = 0; 
-        int codigo_cliente = 0;
-        int i = 0;
-        int c;
         #endregion //----------------------------------------------------------------------------------------------
 
 
@@ -73,9 +70,6 @@ namespace Cafe_DataBase.Forms
             Data_registro.Columns[3].HeaderText = "Telefono";
             Data_registro.Columns[4].Width = 200;
             Data_registro.Columns[4].HeaderText = "Fecha Ingreso";
-
-
-
         }
 
         private void listado_registro(string texto)
@@ -237,22 +231,88 @@ namespace Cafe_DataBase.Forms
         private void Txt_Telefono_TextChange(object sender, EventArgs e)
         {
             string texto = Txt_Telefono.Text;
-            int i = texto.Length;
+            int tama_text = texto.Length;
             int numero;
-            // Comprobar si el texto es diferente de cualquier número
-            
-            if (!int.TryParse(Txt_Telefono.Text, out numero))
+
+            if(tama_text <= 1)
             {
-                if (!texto.Any(char.IsDigit))
+                if (!int.TryParse(Txt_Telefono.Text, out numero))
                 {
-
-                    
-                    
-
+                    // El texto del control no es un valor int válido
+                    Txt_Telefono.Text = "";
                 }
-                
-                
+            }
+            else
+            {
+                if (!int.TryParse(texto, out numero))
+                {
+                    // Ignorar los demás caracteres
+                    texto = texto.Where(char.IsDigit).Aggregate("", (CadAcumulada, DigActual) => CadAcumulada + DigActual);
+                    Txt_Telefono.Text = texto;
+                    Txt_Telefono.SelectionStart = tama_text;
+                }
+            }   
+        }
+
+        private void Txt_Identificacion_TextChange(object sender, EventArgs e)
+        {
+            string texto = Txt_Identificacion.Text;
+            int c = texto.Length;
+            int tama_text = texto.Length;
+            int numero;
+
+            if (tama_text <= 1)
+            {
+                if (!int.TryParse(Txt_Identificacion.Text, out numero))
+                {
+                    // El texto del control no es un valor int válido
+                    Txt_Identificacion.Text = "";
+                }
+            }
+            else
+            {
+                if (!int.TryParse(texto, out numero))
+                {
+                    // Ignorar los demás caracteres
+                    texto = texto.Where(char.IsDigit).Aggregate("", (CadAcumulada, DigActual) => CadAcumulada + DigActual);
+                    Txt_Identificacion.Text = texto;
+                    Txt_Identificacion.SelectionStart = tama_text;
+                }
             }
         }
     }
 }
+
+/*
+ * texto = texto.Where(char.IsDigit).Aggregate("", (s, c) => s + c);
+ * La línea de código texto = texto.Where(char.IsDigit).Aggregate("", (s, c) => s + c); la procesaría de la siguiente manera:
+ * 
+ * 1. Primero, el método Where filtraría todos los caracteres de la cadena que son dígitos. 
+ * En este caso, los caracteres filtrados serían "1", "2", "3", "4", y "5".
+ * 
+ * 2. A continuación, el método Aggregate combinaría los caracteres filtrados en una nueva cadena. 
+ *    En este caso, la cadena acumulada sería "12345".
+ * 
+ * Por lo tanto, el resultado final de la línea de código sería la cadena "12345".
+ * Aquí hay un diagrama que ilustra el proceso:
+ * 
+ * ---------------------------------------------------------------
+ * s: Representa la cadena acumulada hasta ahora.
+ * c: Representa el dígito actual que se está procesando.
+ * s + c: Concatena el dígito actual a la cadena acumulada.
+ * ---------------------------------------------------------------
+ * 
+ * --->
+ * texto = "Hello123World45"
+ * 
+ * // Filtra los caracteres que son dígitos
+ * texto.Where(char.IsDigit)
+ * 
+ * // Combina los caracteres filtrados en una nueva cadena
+ * texto.Aggregate("", (s, c) => s + c)
+ * 
+ * // Resultado final
+ * "12345"
+
+ * 
+ */

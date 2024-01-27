@@ -550,6 +550,7 @@
             this.Name = "ConsultClients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultClients";
+            this.Load += new System.EventHandler(this.ConsultClients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
             this.PnTop.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cafe_DataBase.logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,49 @@ namespace Cafe_DataBase.Forms
             InitializeComponent();
         }
 
+        #region "Mis variables"
+
+        #endregion
+
+        #region "Procesos"
+        private void Formato_ar()
+        {
+            Dgv_ClientesRegistrados.Columns[0].Width = 25;
+            Dgv_ClientesRegistrados.Columns[0].HeaderText = "ID";
+            Dgv_ClientesRegistrados.Columns[1].Width = 120;
+            Dgv_ClientesRegistrados.Columns[1].HeaderText = "Nombres";
+            Dgv_ClientesRegistrados.Columns[2].Width = 60;
+            Dgv_ClientesRegistrados.Columns[2].HeaderText = "Identificacion";
+            Dgv_ClientesRegistrados.Columns[3].Width = 60;
+            Dgv_ClientesRegistrados.Columns[3].HeaderText = "Telefono";
+            Dgv_ClientesRegistrados.Columns[4].Width = 200;
+            Dgv_ClientesRegistrados.Columns[4].HeaderText = "Fecha Ingreso";
+        }
+        private void listado_registro(string texto)
+        {
+            L_proceso Datos = new L_proceso();
+            Dgv_ClientesRegistrados.DataSource = Datos.Listado_registro(texto);
+            this.Formato_ar();
+
+        }
+        #endregion
+
 
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+
         }
 
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void ConsultClients_Load(object sender, EventArgs e)
+        {
+            this.listado_registro("%"); // Porcentaje para mostrar algo
         }
     }
 }

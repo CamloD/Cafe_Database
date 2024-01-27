@@ -999,6 +999,7 @@
             this.Txt_Identificacion.TextPlaceholder = "Identificación";
             this.Txt_Identificacion.UseSystemPasswordChar = false;
             this.Txt_Identificacion.WordWrap = true;
+            this.Txt_Identificacion.TextChange += new System.EventHandler(this.Txt_Identificacion_TextChange);
             // 
             // Txt_Nombres
             // 

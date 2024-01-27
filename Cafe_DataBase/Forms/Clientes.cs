@@ -87,7 +87,7 @@ namespace Cafe_DataBase.Forms
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
         {
-            //DataGrid1.
+            
         }
     }
 }
