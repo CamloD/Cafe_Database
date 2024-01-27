@@ -18,7 +18,6 @@ namespace Cafe_DataBase
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MenuPrincipal());
-
         }
     }
 }
