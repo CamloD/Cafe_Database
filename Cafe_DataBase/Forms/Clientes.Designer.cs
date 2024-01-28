@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -42,7 +43,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -50,6 +50,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Pnseleccion = new System.Windows.Forms.Panel();
             this.Text_Price = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -71,11 +72,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.DataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Identificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Teléfono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Se_agrego_el = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Btn_Eliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -84,6 +80,12 @@
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.PnTop = new System.Windows.Forms.Panel();
+            this.Reg_CLiente_borde = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Se_agrego_el = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Teléfono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Identificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.Pnseleccion.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -612,6 +614,7 @@
             // 
             this.DataGrid1.AllowUserToAddRows = false;
             this.DataGrid1.AllowUserToDeleteRows = false;
+            this.DataGrid1.AllowUserToOrderColumns = true;
             this.DataGrid1.AllowUserToResizeColumns = false;
             this.DataGrid1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
@@ -669,49 +672,6 @@
             this.DataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrid1.Size = new System.Drawing.Size(1010, 328);
             this.DataGrid1.TabIndex = 112;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ID.FillWeight = 15F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Nombres
-            // 
-            this.Nombres.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nombres.FillWeight = 130F;
-            this.Nombres.HeaderText = "Nombres";
-            this.Nombres.Name = "Nombres";
-            this.Nombres.ReadOnly = true;
-            // 
-            // Identificación
-            // 
-            this.Identificación.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Identificación.FillWeight = 40F;
-            this.Identificación.HeaderText = "Identificacion";
-            this.Identificación.Name = "Identificación";
-            this.Identificación.ReadOnly = true;
-            // 
-            // Teléfono
-            // 
-            this.Teléfono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Teléfono.FillWeight = 40F;
-            this.Teléfono.HeaderText = "Telefono";
-            this.Teléfono.Name = "Teléfono";
-            this.Teléfono.ReadOnly = true;
-            this.Teléfono.ToolTipText = "0";
-            // 
-            // Se_agrego_el
-            // 
-            this.Se_agrego_el.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Se_agrego_el.FillWeight = 44F;
-            this.Se_agrego_el.HeaderText = "Fecha ingreso";
-            this.Se_agrego_el.Name = "Se_agrego_el";
-            this.Se_agrego_el.ReadOnly = true;
             // 
             // panel6
             // 
@@ -1107,6 +1067,53 @@
             this.PnTop.Size = new System.Drawing.Size(1010, 40);
             this.PnTop.TabIndex = 2;
             // 
+            // Reg_CLiente_borde
+            // 
+            this.Reg_CLiente_borde.ElipseRadius = 16;
+            // 
+            // Se_agrego_el
+            // 
+            this.Se_agrego_el.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Se_agrego_el.FillWeight = 44F;
+            this.Se_agrego_el.HeaderText = "Fecha ingreso";
+            this.Se_agrego_el.Name = "Se_agrego_el";
+            this.Se_agrego_el.ReadOnly = true;
+            // 
+            // Teléfono
+            // 
+            this.Teléfono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Teléfono.FillWeight = 40F;
+            this.Teléfono.HeaderText = "Telefono";
+            this.Teléfono.Name = "Teléfono";
+            this.Teléfono.ReadOnly = true;
+            this.Teléfono.ToolTipText = "0";
+            // 
+            // Identificación
+            // 
+            this.Identificación.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Identificación.FillWeight = 40F;
+            this.Identificación.HeaderText = "Identificacion";
+            this.Identificación.Name = "Identificación";
+            this.Identificación.ReadOnly = true;
+            // 
+            // Nombres
+            // 
+            this.Nombres.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombres.FillWeight = 130F;
+            this.Nombres.HeaderText = "Nombres";
+            this.Nombres.Name = "Nombres";
+            this.Nombres.ReadOnly = true;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ID.FillWeight = 15F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1156,11 +1163,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Identificación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Teléfono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Se_agrego_el;
         private Bunifu.UI.WinForms.BunifuDropdown Dropdown1;
         private Bunifu.UI.WinForms.BunifuTextBox Text_Cant;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Agregar;
@@ -1171,5 +1173,11 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Editar;
         internal System.Windows.Forms.Label Lb_price;
         private Bunifu.UI.WinForms.BunifuTextBox Text_Price;
+        private Bunifu.Framework.UI.BunifuElipse Reg_CLiente_borde;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Identificación;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Teléfono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Se_agrego_el;
     }
 }

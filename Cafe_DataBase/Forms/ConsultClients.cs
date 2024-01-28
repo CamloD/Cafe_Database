@@ -19,11 +19,13 @@ namespace Cafe_DataBase.Forms
         }
 
         #region "Mis variables"
+        int cont = 0;
+        private bool formato_ar_ejecutado = false;
 
         #endregion
 
         #region "Procesos"
-        private void Formato_ar()
+        private void Formato_clientes()
         {
             Dgv_ClientesRegistrados.Columns[0].Width = 25;
             Dgv_ClientesRegistrados.Columns[0].HeaderText = "ID";
@@ -38,9 +40,15 @@ namespace Cafe_DataBase.Forms
         }
         private void listado_registro(string texto)
         {
-            L_proceso Datos = new L_proceso();
+            L_Proceso_Registro Datos = new L_Proceso_Registro();
             Dgv_ClientesRegistrados.DataSource = Datos.Listado_registro(texto);
-            this.Formato_ar();
+            if(!formato_ar_ejecutado)
+            { 
+                this.Formato_clientes();
+                formato_ar_ejecutado = true;
+            }
+
+            cont++;
 
         }
         #endregion

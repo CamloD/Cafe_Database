@@ -88,7 +88,7 @@
             this.Date = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.Data_registro = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Dgv_registro = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TxtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -98,7 +98,7 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Data_registro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_registro)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -528,6 +528,7 @@
             this.Btn_Editar.TextMarginLeft = 0;
             this.Btn_Editar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Btn_Editar.UseDefaultRadiusAndThickness = true;
+            this.Btn_Editar.Click += new System.EventHandler(this.Btn_Editar_Click);
             // 
             // Eliminar_Rad
             // 
@@ -624,6 +625,7 @@
             this.Btn_Eliminar.TextMarginLeft = 0;
             this.Btn_Eliminar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Btn_Eliminar.UseDefaultRadiusAndThickness = true;
+            this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
             // 
             // panel1
             // 
@@ -1150,28 +1152,28 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
-            this.panel6.Controls.Add(this.Data_registro);
+            this.panel6.Controls.Add(this.Dgv_registro);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 42);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1010, 356);
             this.panel6.TabIndex = 82;
             // 
-            // Data_registro
+            // Dgv_registro
             // 
-            this.Data_registro.AllowUserToAddRows = false;
-            this.Data_registro.AllowUserToDeleteRows = false;
-            this.Data_registro.AllowUserToOrderColumns = true;
-            this.Data_registro.AllowUserToResizeColumns = false;
-            this.Data_registro.AllowUserToResizeRows = false;
+            this.Dgv_registro.AllowUserToAddRows = false;
+            this.Dgv_registro.AllowUserToDeleteRows = false;
+            this.Dgv_registro.AllowUserToOrderColumns = true;
+            this.Dgv_registro.AllowUserToResizeColumns = false;
+            this.Dgv_registro.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Data_registro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.Data_registro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Data_registro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
-            this.Data_registro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Data_registro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.Data_registro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Dgv_registro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_registro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_registro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
+            this.Dgv_registro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dgv_registro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.Dgv_registro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
@@ -1179,9 +1181,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Data_registro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Data_registro.ColumnHeadersHeight = 30;
-            this.Data_registro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Dgv_registro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_registro.ColumnHeadersHeight = 30;
+            this.Dgv_registro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
@@ -1189,16 +1191,16 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(82)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Data_registro.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Data_registro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Data_registro.DoubleBuffered = true;
-            this.Data_registro.EnableHeadersVisualStyles = false;
-            this.Data_registro.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Data_registro.HeaderForeColor = System.Drawing.Color.White;
-            this.Data_registro.Location = new System.Drawing.Point(0, 0);
-            this.Data_registro.Name = "Data_registro";
-            this.Data_registro.ReadOnly = true;
-            this.Data_registro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Dgv_registro.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Dgv_registro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Dgv_registro.DoubleBuffered = true;
+            this.Dgv_registro.EnableHeadersVisualStyles = false;
+            this.Dgv_registro.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Dgv_registro.HeaderForeColor = System.Drawing.Color.White;
+            this.Dgv_registro.Location = new System.Drawing.Point(0, 0);
+            this.Dgv_registro.Name = "Dgv_registro";
+            this.Dgv_registro.ReadOnly = true;
+            this.Dgv_registro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1206,14 +1208,14 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Transparent;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Data_registro.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.Data_registro.RowHeadersVisible = false;
-            this.Data_registro.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.Data_registro.RowTemplate.ReadOnly = true;
-            this.Data_registro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Data_registro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Data_registro.Size = new System.Drawing.Size(1010, 356);
-            this.Data_registro.TabIndex = 81;
+            this.Dgv_registro.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.Dgv_registro.RowHeadersVisible = false;
+            this.Dgv_registro.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.Dgv_registro.RowTemplate.ReadOnly = true;
+            this.Dgv_registro.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Dgv_registro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_registro.Size = new System.Drawing.Size(1010, 356);
+            this.Dgv_registro.TabIndex = 81;
             // 
             // panel5
             // 
@@ -1340,7 +1342,7 @@
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Data_registro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_registro)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1378,7 +1380,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Eliminar;
         private Bunifu.UI.WinForms.BunifuTextBox TxtBuscar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_BuscarGrid;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid Data_registro;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid Dgv_registro;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

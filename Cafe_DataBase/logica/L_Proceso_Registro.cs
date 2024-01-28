@@ -10,7 +10,7 @@ using Cafe_DataBase.Modelo;
 
 namespace Cafe_DataBase.logica
 {
-    internal class L_proceso
+    internal class L_Proceso_Registro
     {
         public DataTable Listado_registro(string cTexto)
         {
@@ -84,5 +84,31 @@ namespace Cafe_DataBase.logica
             return Rpta;
 
         }
-    }
+
+        public string Borrar_registro(int nCod_cliente)
+        {
+            // Rpta --> Respuesta
+            string Rpta = "";
+            OleDbConnection SqlCon = new OleDbConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                // Con el Explorador de Servidores, obtenemos lo necesario
+                string Sql_tarea = "";
+                Sql_tarea = "delete from tb_registro where codigo_ar = val('" + nCod_cliente + "') ";
+
+                OleDbCommand Comando = new OleDbCommand(Sql_tarea, SqlCon);
+                SqlCon.Open();
+                Rpta = Comando.ExecuteNonQuery() >= 1 ? "OK" : "No se puso Eliminar el Registro";
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
+        }
 }

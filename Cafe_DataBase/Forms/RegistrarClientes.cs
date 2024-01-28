@@ -58,25 +58,25 @@ namespace Cafe_DataBase.Forms
             Txt_ID.Clear();
         }
 
-        private void Formato_ar()
+        private void Formato_clientes()
         {
-            Data_registro.Columns[0].Width = 25;
-            Data_registro.Columns[0].HeaderText = "ID";
-            Data_registro.Columns[1].Width = 120;
-            Data_registro.Columns[1].HeaderText = "Nombres";
-            Data_registro.Columns[2].Width = 60;
-            Data_registro.Columns[2].HeaderText = "Identificacion";
-            Data_registro.Columns[3].Width = 60;
-            Data_registro.Columns[3].HeaderText = "Telefono";
-            Data_registro.Columns[4].Width = 200;
-            Data_registro.Columns[4].HeaderText = "Fecha Ingreso";
+            Dgv_registro.Columns[0].Width = 25;
+            Dgv_registro.Columns[0].HeaderText = "ID";
+            Dgv_registro.Columns[1].Width = 120;
+            Dgv_registro.Columns[1].HeaderText = "Nombres";
+            Dgv_registro.Columns[2].Width = 60;
+            Dgv_registro.Columns[2].HeaderText = "Identificacion";
+            Dgv_registro.Columns[3].Width = 60;
+            Dgv_registro.Columns[3].HeaderText = "Telefono";
+            Dgv_registro.Columns[4].Width = 200;
+            Dgv_registro.Columns[4].HeaderText = "Fecha Ingreso";
         }
 
         private void listado_registro(string texto)
         {
-            L_proceso Datos = new L_proceso();
-            Data_registro.DataSource = Datos.Listado_registro(texto);
-            this.Formato_ar();
+            L_Proceso_Registro Datos = new L_Proceso_Registro();
+            Dgv_registro.DataSource = Datos.Listado_registro(texto);
+            this.Formato_clientes();
             
         }
 
@@ -170,64 +170,6 @@ namespace Cafe_DataBase.Forms
             this.Estado_botonesacciones(false);
 
         }
-        private void Btn_Guardar_Click(object sender, EventArgs e)
-        {
-            if (Txt_Nombres.Text == String.Empty || Txt_Telefono.Text == string.Empty)
-            {
-                MessageBox.Show("Ingrese los datos Requeridos (*)",
-                                "Aviso del Sistema",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                #region "operaciones Guardar"
-                string datas = Txt_Telefono.Text.Replace(" ", "");
-
-               
-
-                #endregion
-
-                M_clientes oPro = new M_clientes();
-                oPro.cod_registro = codigo_registro;
-                oPro.nombre = Txt_Nombres.Text.Trim();
-                if (string.IsNullOrEmpty(Txt_Identificacion.Text))
-                {
-                    oPro.identificacion = 0;
-                }
-                else
-                {
-                    oPro.identificacion = int.Parse(Txt_Identificacion.Text);
-                }
-
-                
-                oPro.telefono = long.Parse(datas.Trim());
-                oPro.fecha_registro = DateTime.Now;
-                   
-
-                string Rpta = "";
-                L_proceso Datos = new L_proceso();
-                Rpta = Datos.guarda_registro(EstadoGuardar, oPro);
-                Limpia_texto();
-                if (Rpta.Equals("OK"))
-                {
-                    this.Estado_texto(false);
-                    this.Estado_botoncesprocesos(false);
-                    this.Estado_botonesacciones(false);
-                    this.listado_registro("%");   // muestreme toda la informacion
-                    EstadoGuardar = 0;
-                    MessageBox.Show("Los Datos han sido Guardado Correctamente",
-                                   "Aviso del Sistema",
-                                   MessageBoxButtons.OK,
-                                   MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show(Rpta);
-                }
-            }
-        }
-
         private void Txt_Telefono_TextChange(object sender, EventArgs e)
         {
             string texto = Txt_Telefono.Text;
@@ -253,7 +195,63 @@ namespace Cafe_DataBase.Forms
                 }
             }   
         }
+        private void Btn_Guardar_Click(object sender, EventArgs e)
+        {
+            if (Txt_Nombres.Text == String.Empty || Txt_Telefono.Text == string.Empty)
+            {
+                MessageBox.Show("Ingrese los datos Requeridos (*)",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                #region "operaciones Guardar"
+                string datas = Txt_Telefono.Text.Replace(" ", "");
 
+
+
+                #endregion
+
+                M_clientes oPro = new M_clientes();
+                oPro.cod_registro = codigo_registro;
+                oPro.nombre = Txt_Nombres.Text.Trim();
+                if (string.IsNullOrEmpty(Txt_Identificacion.Text))
+                {
+                    oPro.identificacion = 0;
+                }
+                else
+                {
+                    oPro.identificacion = int.Parse(Txt_Identificacion.Text);
+                }
+
+
+                oPro.telefono = long.Parse(datas.Trim());
+                oPro.fecha_registro = DateTime.Now;
+
+
+                string Rpta = "";
+                L_Proceso_Registro Datos = new L_Proceso_Registro();
+                Rpta = Datos.guarda_registro(EstadoGuardar, oPro);
+                Limpia_texto();
+                if (Rpta.Equals("OK"))
+                {
+                    this.Estado_texto(false);
+                    this.Estado_botoncesprocesos(false);
+                    this.Estado_botonesacciones(false);
+                    this.listado_registro("%");   // muestreme toda la informacion
+                    EstadoGuardar = 0;
+                    MessageBox.Show("Los Datos han sido Guardado Correctamente",
+                                   "Aviso del Sistema",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(Rpta);
+                }
+            }
+        }
         private void Txt_Identificacion_TextChange(object sender, EventArgs e)
         {
             string texto = Txt_Identificacion.Text;
@@ -280,6 +278,23 @@ namespace Cafe_DataBase.Forms
                 }
             }
         }
+        private void Btn_Editar_Click(object sender, EventArgs e)
+        {
+            EstadoGuardar = 2;
+            
+        }
+
+        private void Btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if(Dgv_registro.Rows.Count > 0)
+            {
+                //String Rpta = "";
+                L_Proceso_Registro Datos = new L_Proceso_Registro();
+                //Rpta = Datos.Borrar_registro();
+            }
+        }
+
+        
     }
 }
 

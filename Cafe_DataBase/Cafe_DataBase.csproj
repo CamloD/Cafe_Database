@@ -261,7 +261,7 @@
       <DependentUpon>Totalcafe.cs</DependentUpon>
     </Compile>
     <Compile Include="logica\Conexion.cs" />
-    <Compile Include="logica\L_proceso.cs" />
+    <Compile Include="logica\L_Proceso_Registro.cs" />
     <Compile Include="Modelo\M_clientes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
