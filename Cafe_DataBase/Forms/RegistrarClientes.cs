@@ -30,10 +30,10 @@ namespace Cafe_DataBase.Forms
         }
 
         #region "mis Variables"
-        int cont = 0;
         string dato = "";
         int EstadoGuardar = 0;
-        int codigo_registro = 0; 
+        int codigo_registro = 0;
+        string fecha = "";
         #endregion //----------------------------------------------------------------------------------------------
 
 
@@ -52,10 +52,14 @@ namespace Cafe_DataBase.Forms
 
         private void Limpia_texto()
         {
-            Txt_Nombres.Clear();
-            Txt_Identificacion.Clear();
-            Txt_Telefono.Clear();
-            Txt_ID.Clear();
+            //Txt_Nombres.Clear();
+            Txt_Nombres.Text = "";
+            //Txt_Identificacion.Clear();
+            Txt_Identificacion.Text = "";
+            //Txt_Telefono.Clear();
+            Txt_Telefono.Text = "";
+            //Txt_ID.Clear();
+            Txt_ID.Text = "";
         }
 
         private void Formato_clientes()
@@ -97,6 +101,8 @@ namespace Cafe_DataBase.Forms
             Btn_Guardar.Enabled = lEstado;
             Btn_Cancelar.Enabled = lEstado;
             Btn_Eliminar.Enabled = !lEstado;
+
+            Dgv_registro.Enabled = !lEstado;
         }
         private void Estado_botonesacciones(bool lEstado)
         {
@@ -104,9 +110,28 @@ namespace Cafe_DataBase.Forms
             Btn_Guardar.Visible = lEstado;
         }
 
+        private void Seleccion_Item_RegClientes()
+        {
+            if (String.IsNullOrEmpty(Convert.ToString(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value)))
+            {
+                MessageBox.Show("Seleccione un Registro",
+                               "Aviso del Sistema",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                codigo_registro = Convert.ToInt32(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value);
+                Txt_ID.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value);
+                Txt_Nombres.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["nombre"].Value);
+                Txt_Identificacion.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["identificacion"].Value);
+                Txt_Telefono.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["telefono"].Value);
+                fecha = Convert.ToString(Dgv_registro.CurrentRow.Cells["fecha_registro"].Value);
+
+            }
+        }
+
         #endregion  //--------------------------------------------------------------------------------------------
-
-
 
 
         private void RegistrarClientes_Load(object sender, EventArgs e)
@@ -131,16 +156,6 @@ namespace Cafe_DataBase.Forms
             }
         }
 
-        private void Btn_BuscarGrid_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-        
 
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -151,8 +166,8 @@ namespace Cafe_DataBase.Forms
         private void Btn_nuevo_Click(object sender, EventArgs e)
         {
             EstadoGuardar = 1; //Nuevo Registro
-            this.Estado_texto(true);
             this.Limpia_texto();
+            this.Estado_texto(true);
             this.Estado_botoncesprocesos(true);
             this.Estado_botonesacciones(true);
 
@@ -195,63 +210,6 @@ namespace Cafe_DataBase.Forms
                 }
             }   
         }
-        private void Btn_Guardar_Click(object sender, EventArgs e)
-        {
-            if (Txt_Nombres.Text == String.Empty || Txt_Telefono.Text == string.Empty)
-            {
-                MessageBox.Show("Ingrese los datos Requeridos (*)",
-                                "Aviso del Sistema",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                #region "operaciones Guardar"
-                string datas = Txt_Telefono.Text.Replace(" ", "");
-
-
-
-                #endregion
-
-                M_clientes oPro = new M_clientes();
-                oPro.cod_registro = codigo_registro;
-                oPro.nombre = Txt_Nombres.Text.Trim();
-                if (string.IsNullOrEmpty(Txt_Identificacion.Text))
-                {
-                    oPro.identificacion = 0;
-                }
-                else
-                {
-                    oPro.identificacion = int.Parse(Txt_Identificacion.Text);
-                }
-
-
-                oPro.telefono = long.Parse(datas.Trim());
-                oPro.fecha_registro = DateTime.Now;
-
-
-                string Rpta = "";
-                L_Proceso_Registro Datos = new L_Proceso_Registro();
-                Rpta = Datos.guarda_registro(EstadoGuardar, oPro);
-                Limpia_texto();
-                if (Rpta.Equals("OK"))
-                {
-                    this.Estado_texto(false);
-                    this.Estado_botoncesprocesos(false);
-                    this.Estado_botonesacciones(false);
-                    this.listado_registro("%");   // muestreme toda la informacion
-                    EstadoGuardar = 0;
-                    MessageBox.Show("Los Datos han sido Guardado Correctamente",
-                                   "Aviso del Sistema",
-                                   MessageBoxButtons.OK,
-                                   MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show(Rpta);
-                }
-            }
-        }
         private void Txt_Identificacion_TextChange(object sender, EventArgs e)
         {
             string texto = Txt_Identificacion.Text;
@@ -278,23 +236,95 @@ namespace Cafe_DataBase.Forms
                 }
             }
         }
+        private void Btn_Guardar_Click(object sender, EventArgs e)
+        {
+            if (Txt_Nombres.Text == String.Empty || Txt_Telefono.Text == string.Empty)
+            {
+                MessageBox.Show("Ingrese los datos Requeridos (*)",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                #region "operaciones Guardar"
+                string datas = Txt_Telefono.Text.Replace(" ", "");
+                #endregion
+
+                M_clientes oPro = new M_clientes();
+                oPro.cod_registro = codigo_registro;
+                oPro.nombre = Txt_Nombres.Text.Trim();
+                if (string.IsNullOrEmpty(Txt_Identificacion.Text))
+                {
+                    oPro.identificacion = 0;
+                }
+                else
+                {
+                    oPro.identificacion = int.Parse(Txt_Identificacion.Text);
+                }
+
+                oPro.telefono = long.Parse(datas.Trim());
+                oPro.fecha_registro = DateTime.Now;
+
+                string Rpta = "";
+                L_Proceso_Registro Datos = new L_Proceso_Registro();
+                Rpta = Datos.guarda_registro(EstadoGuardar, oPro);
+                Limpia_texto();
+                if (Rpta.Equals("OK"))
+                {
+                    this.Estado_texto(false);
+                    this.Estado_botoncesprocesos(false);
+                    this.Estado_botonesacciones(false);
+                    this.listado_registro("%");   // muestreme toda la informacion
+                    EstadoGuardar = 0;
+                    MessageBox.Show("Los Datos han sido Guardado Correctamente",
+                                   "Aviso del Sistema",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(Rpta);
+                }
+            }
+        }
         private void Btn_Editar_Click(object sender, EventArgs e)
         {
             EstadoGuardar = 2;
-            
+            this.Estado_texto(true);
+            this.Estado_botoncesprocesos(true);
+            this.Estado_botonesacciones(true);
+            Txt_Nombres.Focus();
         }
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
         {
             if(Dgv_registro.Rows.Count > 0)
             {
-                //String Rpta = "";
+                String Rpta = "";
                 L_Proceso_Registro Datos = new L_Proceso_Registro();
-                //Rpta = Datos.Borrar_registro();
+                Rpta = Datos.Borrar_registro(codigo_registro);
+                if (Rpta.Equals("OK"))
+                {
+                    this.listado_registro("%");
+                    codigo_registro = 0;
+                    this.Limpia_texto();
+                    MessageBox.Show("El Registro ha sido Eliminado",
+                                    "Aviso del Sistem",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    MessageBox.Show(Rpta);
+                }
             }
         }
 
-        
+        private void Dgv_registro_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Seleccion_Item_RegClientes();
+        }
     }
 }
 

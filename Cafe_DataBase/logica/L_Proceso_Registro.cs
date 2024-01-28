@@ -15,7 +15,7 @@ namespace Cafe_DataBase.logica
         public DataTable Listado_registro(string cTexto)
         {
             OleDbDataReader Resultado;
-            DataTable Tabla = new DataTable();  
+            DataTable Tabla = new DataTable();
             OleDbConnection SqlCon = new OleDbConnection();
 
             try
@@ -40,7 +40,7 @@ namespace Cafe_DataBase.logica
             {
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
-            
+
         }
 
         public string guarda_registro(int nOpcion, M_clientes oPro)
@@ -58,11 +58,11 @@ namespace Cafe_DataBase.logica
                 {
                     Sql_tarea = "insert into tb_registro(nombre, identificacion, telefono, fecha_registro) " +
                                    " values('" + oPro.nombre + "', '" + oPro.identificacion +
-                                   "', '" + oPro.telefono + "', '"+ oPro.fecha_registro +"')";
+                                   "', '" + oPro.telefono + "', '" + oPro.fecha_registro + "')";
                 }
                 else // Actulizar Registro
                 {
-                    Sql_tarea = "update tb_registro set cod_cliente =  '" + oPro.cod_cliente + "'," +
+                    Sql_tarea = "update tb_registro set  cod_cliente =  '" + oPro.cod_cliente + "'," +
                                                        " nombre = '" + oPro.nombre + "'," +
                                                        " identificacion = val('" + oPro.identificacion + "')," +
                                                        " telefono = val('" + oPro.telefono + "') " +
@@ -95,7 +95,7 @@ namespace Cafe_DataBase.logica
                 SqlCon = Conexion.getInstancia().CrearConexion();
                 // Con el Explorador de Servidores, obtenemos lo necesario
                 string Sql_tarea = "";
-                Sql_tarea = "delete from tb_registro where codigo_ar = val('" + nCod_cliente + "') ";
+                Sql_tarea = "delete from tb_registro where cod_cliente = val('" + nCod_cliente + "') ";
 
                 OleDbCommand Comando = new OleDbCommand(Sql_tarea, SqlCon);
                 SqlCon.Open();
@@ -111,4 +111,5 @@ namespace Cafe_DataBase.logica
             }
             return Rpta;
         }
+    }
 }

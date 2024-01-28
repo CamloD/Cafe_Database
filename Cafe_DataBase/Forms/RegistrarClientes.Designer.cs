@@ -1216,6 +1216,7 @@
             this.Dgv_registro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_registro.Size = new System.Drawing.Size(1010, 356);
             this.Dgv_registro.TabIndex = 81;
+            this.Dgv_registro.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_registro_CellEnter);
             // 
             // panel5
             // 
