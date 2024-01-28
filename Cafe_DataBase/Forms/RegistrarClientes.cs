@@ -32,8 +32,8 @@ namespace Cafe_DataBase.Forms
         #region "mis Variables"
         string dato = "";
         int EstadoGuardar = 0;
-        int codigo_registro = 0;
-        string fecha = "";
+        int codigo_cliente = 0;
+        DateTime fecha;
         #endregion //----------------------------------------------------------------------------------------------
 
 
@@ -121,12 +121,12 @@ namespace Cafe_DataBase.Forms
             }
             else
             {
-                codigo_registro = Convert.ToInt32(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value);
+                codigo_cliente = Convert.ToInt32(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value);
                 Txt_ID.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["cod_cliente"].Value);
                 Txt_Nombres.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["nombre"].Value);
                 Txt_Identificacion.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["identificacion"].Value);
                 Txt_Telefono.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["telefono"].Value);
-                fecha = Convert.ToString(Dgv_registro.CurrentRow.Cells["fecha_registro"].Value);
+                fecha = Convert.ToDateTime(Dgv_registro.CurrentRow.Cells["fecha_registro"].Value);
 
             }
         }
@@ -172,6 +172,7 @@ namespace Cafe_DataBase.Forms
             this.Estado_botonesacciones(true);
 
             Txt_Nombres.Focus();
+
 
         }
 
@@ -252,7 +253,7 @@ namespace Cafe_DataBase.Forms
                 #endregion
 
                 M_clientes oPro = new M_clientes();
-                oPro.cod_registro = codigo_registro;
+                oPro.cod_cliente = codigo_cliente;
                 oPro.nombre = Txt_Nombres.Text.Trim();
                 if (string.IsNullOrEmpty(Txt_Identificacion.Text))
                 {
@@ -264,7 +265,14 @@ namespace Cafe_DataBase.Forms
                 }
 
                 oPro.telefono = long.Parse(datas.Trim());
-                oPro.fecha_registro = DateTime.Now;
+                if (EstadoGuardar == 1)
+                {
+                    oPro.fecha_registro = DateTime.Now;
+                }
+                else
+                {
+                    oPro.fecha_registro = fecha;
+                }
 
                 string Rpta = "";
                 L_Proceso_Registro Datos = new L_Proceso_Registro();
@@ -303,11 +311,11 @@ namespace Cafe_DataBase.Forms
             {
                 String Rpta = "";
                 L_Proceso_Registro Datos = new L_Proceso_Registro();
-                Rpta = Datos.Borrar_registro(codigo_registro);
+                Rpta = Datos.Borrar_registro(codigo_cliente);
                 if (Rpta.Equals("OK"))
                 {
                     this.listado_registro("%");
-                    codigo_registro = 0;
+                    codigo_cliente = 0;
                     this.Limpia_texto();
                     MessageBox.Show("El Registro ha sido Eliminado",
                                     "Aviso del Sistem",

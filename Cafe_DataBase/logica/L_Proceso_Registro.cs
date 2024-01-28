@@ -62,12 +62,15 @@ namespace Cafe_DataBase.logica
                 }
                 else // Actulizar Registro
                 {
-                    Sql_tarea = "update tb_registro set  cod_cliente =  '" + oPro.cod_cliente + "'," +
+                    
+                    Sql_tarea = "update tb_registro set" +
                                                        " nombre = '" + oPro.nombre + "'," +
                                                        " identificacion = val('" + oPro.identificacion + "')," +
-                                                       " telefono = val('" + oPro.telefono + "') " +
-                                                       " fecha_registro = val('" + oPro.fecha_registro + "') " +
+                                                       " telefono = val('" + oPro.telefono + "')," +
+                                                       " fecha_registro = CDate('" + oPro.fecha_registro + "') " +
                                         " where cod_cliente = val('" + oPro.cod_cliente + "')";
+
+                    /* http://www.coninteres.es/access_avan/material/Funciones%20de%20Access%20en%20SQL.htm  */
                 }
                 OleDbCommand Comando = new OleDbCommand(Sql_tarea, SqlCon);
                 SqlCon.Open();
