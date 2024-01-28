@@ -19,7 +19,6 @@ namespace Cafe_DataBase.Forms
         }
 
         #region "Mis variables"
-        int cont = 0;
         private bool formato_ar_ejecutado = false;
 
         #endregion
@@ -48,7 +47,7 @@ namespace Cafe_DataBase.Forms
                 formato_ar_ejecutado = true;
             }
 
-            cont++;
+            
 
         }
         #endregion
@@ -58,17 +57,50 @@ namespace Cafe_DataBase.Forms
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+            Txt_buscar.Clear();
 
         }
 
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+            Txt_buscar.Clear();
         }
 
         private void ConsultClients_Load(object sender, EventArgs e)
         {
             this.listado_registro("%"); // Porcentaje para mostrar algo
+        }
+
+        private void Txt_buscar_TextChange(object sender, EventArgs e)
+        {
+            string textoBusqueda = Txt_buscar.Text.ToLower(); // Obtener el texto de búsqueda en minúsculas
+            foreach (DataGridViewRow row in Dgv_ClientesRegistrados.Rows)
+            {
+                bool coincide = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(textoBusqueda))
+                    {
+                        coincide = true; // Marcar la fila como coincidente si se encuentra la coincidencia en alguna celda
+                        break;
+                    }
+                }
+
+                if (coincide)
+                {
+                    row.Visible = true; // Mostrar la fila si coincide con la búsqueda
+                }
+                else
+                {
+                    if (!row.IsNewRow) // Verificar que no sea la fila de nuevo registro
+                    {
+                        Dgv_ClientesRegistrados.CurrentCell = null; // Desseleccionar cualquier celda actualmente seleccionada
+                        row.Visible = false; // Ocultar la fila si no coincide con la búsqueda
+                    }
+                }
+            }
+
         }
     }
 }

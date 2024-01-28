@@ -18,8 +18,13 @@ namespace Cafe_DataBase.Forms
 {
     public partial class RegistrarClientes : Form
     {
+        public string SearchText
+    {
+        get { return _searchText; }
+        set { _searchText = value; }
+    }
 
-
+        private string _searchText;
 
         public RegistrarClientes()
         {
@@ -48,18 +53,15 @@ namespace Cafe_DataBase.Forms
             Txt_ID.ReadOnly = true;
             Txt_ID.Enabled = false;
             Txt_Telefono.MaxLength = 10;
+            
         }
 
         private void Limpia_texto()
         {
-            //Txt_Nombres.Clear();
-            Txt_Nombres.Text = "";
-            //Txt_Identificacion.Clear();
-            Txt_Identificacion.Text = "";
-            //Txt_Telefono.Clear();
-            Txt_Telefono.Text = "";
-            //Txt_ID.Clear();
-            Txt_ID.Text = "";
+            Txt_Nombres.Clear();
+            Txt_Identificacion.Clear();
+            Txt_Telefono.Clear();
+            Txt_ID.Clear();
         }
 
         private void Formato_clientes()
@@ -102,7 +104,7 @@ namespace Cafe_DataBase.Forms
             Btn_Cancelar.Enabled = lEstado;
             Btn_Eliminar.Enabled = !lEstado;
 
-            Dgv_registro.Enabled = !lEstado;
+            Dgv_registro.Enabled = !lEstado;   
         }
         private void Estado_botonesacciones(bool lEstado)
         {
@@ -127,9 +129,9 @@ namespace Cafe_DataBase.Forms
                 Txt_Identificacion.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["identificacion"].Value);
                 Txt_Telefono.Text = Convert.ToString(Dgv_registro.CurrentRow.Cells["telefono"].Value);
                 fecha = Convert.ToDateTime(Dgv_registro.CurrentRow.Cells["fecha_registro"].Value);
-
             }
         }
+
 
         #endregion  //--------------------------------------------------------------------------------------------
 
@@ -142,20 +144,6 @@ namespace Cafe_DataBase.Forms
             Estado_texto(false);
             
         }
-
-        private void Busqueda_en_Grid(DataGridView d, int col)
-        {
-            for (int i= 0; i < d.Rows.Count - 1; i++) 
-            {
-                dato = Convert.ToString(d.Rows[i].Cells[col].Value);
-                if (dato != TxtBuscar.Text.Trim())
-                {
-                    MessageBox.Show("si");
-                    break;
-                }
-            }
-        }
-
 
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -298,11 +286,22 @@ namespace Cafe_DataBase.Forms
         }
         private void Btn_Editar_Click(object sender, EventArgs e)
         {
-            EstadoGuardar = 2;
-            this.Estado_texto(true);
-            this.Estado_botoncesprocesos(true);
-            this.Estado_botonesacciones(true);
-            Txt_Nombres.Focus();
+            if (String.IsNullOrEmpty(Convert.ToString(Txt_ID.Text)))
+            {
+                MessageBox.Show("Seleccione un Registro",
+                                "Aviso del Sistema",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                EstadoGuardar = 2;
+                this.Estado_texto(true);
+                this.Estado_botoncesprocesos(true);
+                this.Estado_botonesacciones(true);
+                Txt_Nombres.Focus();
+            }
+            
         }
 
         private void Btn_Eliminar_Click(object sender, EventArgs e)
@@ -327,11 +326,59 @@ namespace Cafe_DataBase.Forms
                     MessageBox.Show(Rpta);
                 }
             }
+
         }
 
         private void Dgv_registro_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             this.Seleccion_Item_RegClientes();
+        }
+
+        private void Btn_nuevo1_Click(object sender, EventArgs e)
+        {
+            EstadoGuardar = 1; //Nuevo Registro
+            this.Limpia_texto();
+            this.Estado_texto(true);
+            this.Estado_botoncesprocesos(true);
+            this.Estado_botonesacciones(true);
+
+            Txt_Nombres.Focus();
+        }
+
+        private void TxtBuscar_TextChange(object sender, EventArgs e)
+        {
+            string textoBusqueda = TxtBuscar.Text.ToLower(); // Obtener el texto de búsqueda en minúsculas
+            foreach (DataGridViewRow row in Dgv_registro.Rows)
+            {
+                bool coincide = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(textoBusqueda))
+                    {
+                        coincide = true; // Marcar la fila como coincidente si se encuentra la coincidencia en alguna celda
+                        break;
+                    }
+                }
+
+                if (coincide)
+                {
+                    row.Visible = true; // Mostrar la fila si coincide con la búsqueda
+                }
+                else
+                {
+                    if (!row.IsNewRow) // Verificar que no sea la fila de nuevo registro
+                    {
+                        Dgv_registro.CurrentCell = null; // Desseleccionar cualquier celda actualmente seleccionada
+                        row.Visible = false; // Ocultar la fila si no coincide con la búsqueda
+                    }
+                }
+            }
+        }
+
+        private void Btn_BuscarGrid_Click(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

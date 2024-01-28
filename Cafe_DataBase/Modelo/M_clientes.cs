@@ -12,7 +12,7 @@ namespace Cafe_DataBase.Modelo
         public int cod_registro { get; set; }
         public string nombre { get; set; }
         public long telefono { get; set; }
-        public int identificacion { get; set; }
+        public long identificacion { get; set; }
         public string tipo_cafe { get; set; }
         public string precio { get; set; }
         public int cantidad { get; set; }
