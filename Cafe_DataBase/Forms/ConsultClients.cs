@@ -1,4 +1,5 @@
 ﻿using Cafe_DataBase.logica;
+using Cafe_DataBase.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,8 @@ namespace Cafe_DataBase.Forms
 
         #region "Mis variables"
         private bool formato_ar_ejecutado = false;
-
+        public int valor = 0;
+        string nombre, telefono, identificacion, names;
         #endregion
 
         #region "Procesos"
@@ -41,35 +43,33 @@ namespace Cafe_DataBase.Forms
         {
             L_Proceso_Registro Datos = new L_Proceso_Registro();
             Dgv_ClientesRegistrados.DataSource = Datos.Listado_registro(texto);
-            if(!formato_ar_ejecutado)
-            { 
+            if (!formato_ar_ejecutado)
+            {
                 this.Formato_clientes();
                 formato_ar_ejecutado = true;
             }
 
-            
-
         }
-        #endregion
+        #endregion  // ---------------------------------------------------------------------------------------------------------------------
 
 
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-            Txt_buscar.Clear();
-
+            Txt_buscar.Text = "";
         }
 
         private void Btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-            Txt_buscar.Clear();
+            Txt_buscar.Text = "";
         }
 
         private void ConsultClients_Load(object sender, EventArgs e)
         {
             this.listado_registro("%"); // Porcentaje para mostrar algo
+            Txt_buscar.PlaceholderText = "Buscar";
         }
 
         private void Txt_buscar_TextChange(object sender, EventArgs e)
@@ -101,6 +101,23 @@ namespace Cafe_DataBase.Forms
                 }
             }
 
+        }
+
+        private void Btn_seleccionar_Click(object sender, EventArgs e)
+        {
+            Clientes clientesForm = new Clientes();
+
+
+            clientesForm.Txt_Nombre.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["nombre"].Value.ToString();
+            clientesForm.Txt_Identificacion.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["identificacion"].Value.ToString();
+            clientesForm.Txt_Teléfono.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["telefono"].Value.ToString();
+
+            
+            
+
+
+            // Cerrar el formulario actual
+            this.Close();
         }
     }
 }

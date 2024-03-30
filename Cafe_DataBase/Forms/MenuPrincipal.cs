@@ -17,6 +17,7 @@ namespace Cafe_DataBase.Forms
         Totalcafe totalProductos;
         Clientes Clientes;
         RegistrarClientes RegClient;
+        Form1 form1;
 
 
         public MenuPrincipal()
@@ -25,6 +26,7 @@ namespace Cafe_DataBase.Forms
             customizeDesign();
             AdjustForm();
 
+            form1 = new Form1();
             RegClient = new RegistrarClientes();
             Clientes = new Clientes();
             totalProductos = new Totalcafe();
@@ -182,7 +184,8 @@ namespace Cafe_DataBase.Forms
 
         private void Clients_Click(object sender, EventArgs e)
         {
-            AbrirFormH1(new Clientes());
+            //AbrirFormH1(new Clientes());
+            Clientes.Show();
             //Clientes.ShowDialog();
         }
 
@@ -193,7 +196,7 @@ namespace Cafe_DataBase.Forms
 
         private void cafe_verde_Click(object sender, EventArgs e)
         {
-
+            form1.Show();
             //...
             //AbrirFormH1(new forma1());
             //..

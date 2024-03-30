@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.UI.WinForms;
+using Cafe_DataBase.logica;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace Cafe_DataBase.Forms
@@ -19,17 +20,66 @@ namespace Cafe_DataBase.Forms
         {
             InitializeComponent();
             consultClients = new ConsultClients();
-            customizeDesign();
+            DisenoPersonalizado();
+            ProcesosIniciales();
         }
-        private void customizeDesign()
+
+        #region "Variables"
+        string name, ident, tel;
+
+        #endregion
+
+
+        #region "Procesos"
+        private void Formato_clientes()
         {
-            Dropdown1.Items.AddRange(
+            Dgv_Clientes.Columns[0].Width = 20;
+            Dgv_Clientes.Columns[0].HeaderText = "ID";
+            Dgv_Clientes.Columns[1].Width = 120;
+            Dgv_Clientes.Columns[1].HeaderText = "Nombres";
+            Dgv_Clientes.Columns[2].Visible = false;
+            Dgv_Clientes.Columns[3].Visible = false;
+            /*
+            Dgv_Clientes.Columns[2].Width = 60;
+            Dgv_Clientes.Columns[2].HeaderText = "Identificacion";
+            Dgv_Clientes.Columns[3].Width = 65;
+            Dgv_Clientes.Columns[3].HeaderText = "Telefono";
+            */
+            Dgv_Clientes.Columns[4].Width = 60;
+            Dgv_Clientes.Columns[4].HeaderText = "Tipo Café";
+            Dgv_Clientes.Columns[5].Width = 35;
+            Dgv_Clientes.Columns[5].HeaderText = "Precio";
+            Dgv_Clientes.Columns[6].Width = 60;
+            Dgv_Clientes.Columns[6].HeaderText = "Cantidad(Kg)";
+            Dgv_Clientes.Columns[7].Width = 40;
+            Dgv_Clientes.Columns[7].HeaderText = "Total";
+            Dgv_Clientes.Columns[8].Width = 200;
+            Dgv_Clientes.Columns[8].HeaderText = "Fecha Proceso";
+        }
+
+        private void listado_clientes(string texto)
+        {
+            L_Proceso_Clientes Datos = new L_Proceso_Clientes();
+            Dgv_Clientes.DataSource = Datos.Listado_Clientes(texto);
+            this.Formato_clientes();
+        }
+
+        private void ProcesosIniciales()
+        {
+           // Txt_Nombre.Enabled = false;
+           // Txt_Identificacion.Enabled = false;
+           // Txt_Teléfono.Enabled = false;
+        }
+
+        private void DisenoPersonalizado()
+        {
+            Desplegable.Items.AddRange(
                 new String[]
                 {
                     "Café Verde",
                     "Café Seco",
                     "Café Pasilla",
-                    
+
                 });
             Text_Cant.PlaceholderText = "Escribe Cantidad en Kg";
             Text_Price.PlaceholderText = "Precio por Kg";
@@ -38,16 +88,28 @@ namespace Cafe_DataBase.Forms
             Text_Price.Enabled = false;
         }
 
+        #endregion  // ----------------------------------------------------------------------------------------------
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+            listado_clientes("%");   
+        }
+
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             consultClients.ShowDialog();
+        }
+
+        private void Btn_Agregar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Dropdown1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
             string tip;
-            tip = Dropdown1.SelectedItem.ToString();
+            tip = Desplegable.SelectedItem.ToString();
 
             if (tip != "Seleccionar")
             {
@@ -89,5 +151,7 @@ namespace Cafe_DataBase.Forms
         {
             
         }
+
+        
     }
 }

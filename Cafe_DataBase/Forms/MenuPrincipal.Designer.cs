@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges43 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges44 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges45 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges46 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges47 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges48 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges49 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel_Top = new System.Windows.Forms.Panel();
             this.panel_top3 = new System.Windows.Forms.Panel();
             this.Label_house = new Bunifu.UI.WinForms.BunifuLabel();
@@ -64,10 +64,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Fecha = new Bunifu.UI.WinForms.BunifuLabel();
             this.Hora = new Bunifu.UI.WinForms.BunifuLabel();
-            this.panel_centro = new System.Windows.Forms.Panel();
             this.PnPrincipal = new System.Windows.Forms.Panel();
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel_centro = new System.Windows.Forms.Panel();
             this.panel_Top.SuspendLayout();
             this.panel_top3.SuspendLayout();
             this.panel_top2.SuspendLayout();
@@ -140,6 +141,7 @@
             this.House_button.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.House_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.House_button.Image = ((System.Drawing.Image)(resources.GetObject("House_button.Image")));
+            this.House_button.ImageActive = null;
             this.House_button.ImageLocation = null;
             this.House_button.ImageMargin = 0;
             this.House_button.ImageSize = new System.Drawing.Size(31, 31);
@@ -156,6 +158,7 @@
             this.House_button.TabIndex = 5;
             this.House_button.ToolTipText = "";
             this.House_button.WaitOnLoad = false;
+            this.House_button.Zoom = 0;
             this.House_button.ZoomSpeed = 10;
             this.House_button.Click += new System.EventHandler(this.House_button_Click);
             // 
@@ -221,6 +224,7 @@
             this.Btn_Normal.FadeWhenInactive = false;
             this.Btn_Normal.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Normal.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Normal.Image")));
+            this.Btn_Normal.ImageActive = null;
             this.Btn_Normal.ImageLocation = null;
             this.Btn_Normal.ImageMargin = 0;
             this.Btn_Normal.ImageSize = new System.Drawing.Size(23, 23);
@@ -237,6 +241,7 @@
             this.Btn_Normal.TabIndex = 6;
             this.Btn_Normal.ToolTipText = "";
             this.Btn_Normal.WaitOnLoad = false;
+            this.Btn_Normal.Zoom = 0;
             this.Btn_Normal.ZoomSpeed = 10;
             this.Btn_Normal.Click += new System.EventHandler(this.Btn_Normal_Click);
             // 
@@ -254,6 +259,7 @@
             this.Btn_Maximizar.FadeWhenInactive = false;
             this.Btn_Maximizar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Maximizar.Image")));
+            this.Btn_Maximizar.ImageActive = null;
             this.Btn_Maximizar.ImageLocation = null;
             this.Btn_Maximizar.ImageMargin = 0;
             this.Btn_Maximizar.ImageSize = new System.Drawing.Size(23, 23);
@@ -270,6 +276,7 @@
             this.Btn_Maximizar.TabIndex = 5;
             this.Btn_Maximizar.ToolTipText = "";
             this.Btn_Maximizar.WaitOnLoad = false;
+            this.Btn_Maximizar.Zoom = 0;
             this.Btn_Maximizar.ZoomSpeed = 10;
             this.Btn_Maximizar.Click += new System.EventHandler(this.Btn_Maximizar_Click);
             // 
@@ -288,6 +295,7 @@
             this.Btn_minimizar.FadeWhenInactive = false;
             this.Btn_minimizar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_minimizar.Image")));
+            this.Btn_minimizar.ImageActive = null;
             this.Btn_minimizar.ImageLocation = null;
             this.Btn_minimizar.ImageMargin = 0;
             this.Btn_minimizar.ImageSize = new System.Drawing.Size(23, 23);
@@ -304,6 +312,7 @@
             this.Btn_minimizar.TabIndex = 4;
             this.Btn_minimizar.ToolTipText = "";
             this.Btn_minimizar.WaitOnLoad = false;
+            this.Btn_minimizar.Zoom = 0;
             this.Btn_minimizar.ZoomSpeed = 10;
             this.Btn_minimizar.Click += new System.EventHandler(this.Btn_minimizar_Click);
             // 
@@ -322,6 +331,7 @@
             this.Btn_Cerrar.FadeWhenInactive = false;
             this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
+            this.Btn_Cerrar.ImageActive = null;
             this.Btn_Cerrar.ImageLocation = null;
             this.Btn_Cerrar.ImageMargin = 0;
             this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
@@ -338,6 +348,7 @@
             this.Btn_Cerrar.TabIndex = 0;
             this.Btn_Cerrar.ToolTipText = "";
             this.Btn_Cerrar.WaitOnLoad = false;
+            this.Btn_Cerrar.Zoom = 0;
             this.Btn_Cerrar.ZoomSpeed = 10;
             this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
@@ -376,11 +387,11 @@
             this.Total_cafe.ColorContrastOnClick = 45;
             this.Total_cafe.ColorContrastOnHover = 45;
             this.Total_cafe.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.Total_cafe.CustomizableEdges = borderEdges1;
+            borderEdges43.BottomLeft = true;
+            borderEdges43.BottomRight = true;
+            borderEdges43.TopLeft = true;
+            borderEdges43.TopRight = true;
+            this.Total_cafe.CustomizableEdges = borderEdges43;
             this.Total_cafe.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Total_cafe.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Total_cafe.DisabledFillColor = System.Drawing.Color.Empty;
@@ -483,11 +494,11 @@
             this.cafe_pasilla.ColorContrastOnClick = 45;
             this.cafe_pasilla.ColorContrastOnHover = 45;
             this.cafe_pasilla.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.cafe_pasilla.CustomizableEdges = borderEdges2;
+            borderEdges44.BottomLeft = true;
+            borderEdges44.BottomRight = true;
+            borderEdges44.TopLeft = true;
+            borderEdges44.TopRight = true;
+            this.cafe_pasilla.CustomizableEdges = borderEdges44;
             this.cafe_pasilla.DialogResult = System.Windows.Forms.DialogResult.None;
             this.cafe_pasilla.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.cafe_pasilla.DisabledFillColor = System.Drawing.Color.Empty;
@@ -577,11 +588,11 @@
             this.cafe_seco.ColorContrastOnClick = 45;
             this.cafe_seco.ColorContrastOnHover = 45;
             this.cafe_seco.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.cafe_seco.CustomizableEdges = borderEdges3;
+            borderEdges45.BottomLeft = true;
+            borderEdges45.BottomRight = true;
+            borderEdges45.TopLeft = true;
+            borderEdges45.TopRight = true;
+            this.cafe_seco.CustomizableEdges = borderEdges45;
             this.cafe_seco.DialogResult = System.Windows.Forms.DialogResult.None;
             this.cafe_seco.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.cafe_seco.DisabledFillColor = System.Drawing.Color.Empty;
@@ -671,11 +682,11 @@
             this.cafe_verde.ColorContrastOnClick = 45;
             this.cafe_verde.ColorContrastOnHover = 45;
             this.cafe_verde.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.cafe_verde.CustomizableEdges = borderEdges4;
+            borderEdges46.BottomLeft = true;
+            borderEdges46.BottomRight = true;
+            borderEdges46.TopLeft = true;
+            borderEdges46.TopRight = true;
+            this.cafe_verde.CustomizableEdges = borderEdges46;
             this.cafe_verde.DialogResult = System.Windows.Forms.DialogResult.None;
             this.cafe_verde.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.cafe_verde.DisabledFillColor = System.Drawing.Color.Empty;
@@ -765,11 +776,11 @@
             this.Cant_product.ColorContrastOnClick = 45;
             this.Cant_product.ColorContrastOnHover = 45;
             this.Cant_product.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.Cant_product.CustomizableEdges = borderEdges5;
+            borderEdges47.BottomLeft = true;
+            borderEdges47.BottomRight = true;
+            borderEdges47.TopLeft = true;
+            borderEdges47.TopRight = true;
+            this.Cant_product.CustomizableEdges = borderEdges47;
             this.Cant_product.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Cant_product.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Cant_product.DisabledFillColor = System.Drawing.Color.Empty;
@@ -858,11 +869,11 @@
             this.Process.ColorContrastOnClick = 45;
             this.Process.ColorContrastOnHover = 45;
             this.Process.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.Process.CustomizableEdges = borderEdges6;
+            borderEdges48.BottomLeft = true;
+            borderEdges48.BottomRight = true;
+            borderEdges48.TopLeft = true;
+            borderEdges48.TopRight = true;
+            this.Process.CustomizableEdges = borderEdges48;
             this.Process.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Process.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Process.DisabledFillColor = System.Drawing.Color.Empty;
@@ -951,11 +962,11 @@
             this.Reg_CLient.ColorContrastOnClick = 45;
             this.Reg_CLient.ColorContrastOnHover = 45;
             this.Reg_CLient.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.Reg_CLient.CustomizableEdges = borderEdges7;
+            borderEdges49.BottomLeft = true;
+            borderEdges49.BottomRight = true;
+            borderEdges49.TopLeft = true;
+            borderEdges49.TopRight = true;
+            this.Reg_CLient.CustomizableEdges = borderEdges49;
             this.Reg_CLient.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Reg_CLient.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Reg_CLient.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1102,18 +1113,10 @@
             this.Hora.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.Hora.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // panel_centro
-            // 
-            this.panel_centro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(55)))), ((int)(((byte)(63)))));
-            this.panel_centro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_centro.Location = new System.Drawing.Point(212, 38);
-            this.panel_centro.Name = "panel_centro";
-            this.panel_centro.Size = new System.Drawing.Size(1010, 570);
-            this.panel_centro.TabIndex = 3;
-            // 
             // PnPrincipal
             // 
             this.PnPrincipal.Controls.Add(this.panel_centro);
+            this.PnPrincipal.Controls.Add(this.panel3);
             this.PnPrincipal.Controls.Add(this.panel_botton);
             this.PnPrincipal.Controls.Add(this.panel_Menu);
             this.PnPrincipal.Controls.Add(this.panel_Top);
@@ -1132,6 +1135,24 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(32)))), ((int)(((byte)(42)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1215, 38);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 570);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel_centro
+            // 
+            this.panel_centro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(55)))), ((int)(((byte)(63)))));
+            this.panel_centro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_centro.Location = new System.Drawing.Point(212, 38);
+            this.panel_centro.Name = "panel_centro";
+            this.panel_centro.Size = new System.Drawing.Size(1003, 570);
+            this.panel_centro.TabIndex = 5;
             // 
             // MenuPrincipal
             // 
@@ -1188,7 +1209,6 @@
         private System.Windows.Forms.Panel panel_Imagen;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel_botton;
-        private System.Windows.Forms.Panel panel_centro;
         private System.Windows.Forms.Panel PnPrincipal;
         private Bunifu.UI.WinForms.BunifuLabel Label_house;
         private Bunifu.UI.WinForms.BunifuImageButton Btn_Maximizar;
@@ -1198,5 +1218,7 @@
         private Bunifu.UI.WinForms.BunifuLabel Fecha;
         private Bunifu.UI.WinForms.BunifuLabel Hora;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel_centro;
     }
 }

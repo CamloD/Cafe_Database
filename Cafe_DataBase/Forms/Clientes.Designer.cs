@@ -28,50 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Pnseleccion = new System.Windows.Forms.Panel();
             this.Text_Price = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Lb_price = new System.Windows.Forms.Label();
             this.Text_Cant = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.Dropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.Desplegable = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.Txt_Teléfono = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Txt_Identificacion = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.Txt_Nombre = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.DataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Dgv_Clientes = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Btn_Eliminar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -80,18 +75,15 @@
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.PnTop = new System.Windows.Forms.Panel();
-            this.Reg_CLiente_borde = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Se_agrego_el = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Teléfono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Identificación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Txt_Teléfono = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Txt_Nombre = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Txt_Identificacion = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             this.Pnseleccion.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Clientes)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PnTop.SuspendLayout();
@@ -114,14 +106,14 @@
             this.Pnseleccion.Controls.Add(this.Text_Price);
             this.Pnseleccion.Controls.Add(this.Lb_price);
             this.Pnseleccion.Controls.Add(this.Text_Cant);
-            this.Pnseleccion.Controls.Add(this.Dropdown1);
+            this.Pnseleccion.Controls.Add(this.Desplegable);
             this.Pnseleccion.Controls.Add(this.label4);
             this.Pnseleccion.Controls.Add(this.label5);
             this.Pnseleccion.Controls.Add(this.label3);
             this.Pnseleccion.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Pnseleccion.Location = new System.Drawing.Point(605, 0);
+            this.Pnseleccion.Location = new System.Drawing.Point(636, 0);
             this.Pnseleccion.Name = "Pnseleccion";
-            this.Pnseleccion.Size = new System.Drawing.Size(405, 156);
+            this.Pnseleccion.Size = new System.Drawing.Size(374, 156);
             this.Pnseleccion.TabIndex = 81;
             // 
             // Text_Price
@@ -160,26 +152,26 @@
             this.Text_Price.Modified = false;
             this.Text_Price.Multiline = false;
             this.Text_Price.Name = "Text_Price";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Price.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Text_Price.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Price.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Price.OnIdleState = stateProperties4;
+            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Price.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Text_Price.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Price.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties28.ForeColor = System.Drawing.Color.White;
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Price.OnIdleState = stateProperties28;
             this.Text_Price.Padding = new System.Windows.Forms.Padding(3);
             this.Text_Price.PasswordChar = '\0';
             this.Text_Price.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
@@ -249,26 +241,26 @@
             this.Text_Cant.Modified = false;
             this.Text_Cant.Multiline = false;
             this.Text_Cant.Name = "Text_Cant";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Cant.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.Text_Cant.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Cant.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties8.ForeColor = System.Drawing.Color.White;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.Text_Cant.OnIdleState = stateProperties8;
+            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties29.FillColor = System.Drawing.Color.Empty;
+            stateProperties29.ForeColor = System.Drawing.Color.Empty;
+            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Cant.OnActiveState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.Text_Cant.OnDisabledState = stateProperties30;
+            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Cant.OnHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties32.ForeColor = System.Drawing.Color.White;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.Text_Cant.OnIdleState = stateProperties32;
             this.Text_Cant.Padding = new System.Windows.Forms.Padding(3);
             this.Text_Cant.PasswordChar = '\0';
             this.Text_Cant.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
@@ -290,51 +282,51 @@
             this.Text_Cant.UseSystemPasswordChar = false;
             this.Text_Cant.WordWrap = true;
             // 
-            // Dropdown1
+            // Desplegable
             // 
-            this.Dropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.Dropdown1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Dropdown1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Dropdown1.BorderRadius = 1;
-            this.Dropdown1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Dropdown1.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.Dropdown1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Dropdown1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Dropdown1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Dropdown1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.Dropdown1.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.Dropdown1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Dropdown1.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.Dropdown1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Dropdown1.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.Dropdown1.FillDropDown = true;
-            this.Dropdown1.FillIndicator = false;
-            this.Dropdown1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dropdown1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dropdown1.ForeColor = System.Drawing.Color.White;
-            this.Dropdown1.FormattingEnabled = true;
-            this.Dropdown1.Icon = null;
-            this.Dropdown1.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Dropdown1.IndicatorColor = System.Drawing.Color.DeepSkyBlue;
-            this.Dropdown1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.Dropdown1.IndicatorThickness = 2;
-            this.Dropdown1.IsDropdownOpened = false;
-            this.Dropdown1.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Dropdown1.ItemBorderColor = System.Drawing.Color.White;
-            this.Dropdown1.ItemForeColor = System.Drawing.Color.White;
-            this.Dropdown1.ItemHeight = 26;
-            this.Dropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.Dropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.Dropdown1.ItemTopMargin = 3;
-            this.Dropdown1.Location = new System.Drawing.Point(28, 33);
-            this.Dropdown1.Name = "Dropdown1";
-            this.Dropdown1.Size = new System.Drawing.Size(220, 32);
-            this.Dropdown1.TabIndex = 92;
-            this.Dropdown1.Tag = "";
-            this.Dropdown1.Text = "Seleccionar";
-            this.Dropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.Dropdown1.TextLeftMargin = 5;
-            this.Dropdown1.SelectedIndexChanged += new System.EventHandler(this.Dropdown1_SelectedIndexChanged);
+            this.Desplegable.BackColor = System.Drawing.Color.Transparent;
+            this.Desplegable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Desplegable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Desplegable.BorderRadius = 1;
+            this.Desplegable.Color = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Desplegable.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.Desplegable.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Desplegable.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Desplegable.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Desplegable.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Desplegable.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.Desplegable.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Desplegable.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.Desplegable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Desplegable.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.Desplegable.FillDropDown = true;
+            this.Desplegable.FillIndicator = false;
+            this.Desplegable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Desplegable.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Desplegable.ForeColor = System.Drawing.Color.White;
+            this.Desplegable.FormattingEnabled = true;
+            this.Desplegable.Icon = null;
+            this.Desplegable.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.Desplegable.IndicatorColor = System.Drawing.Color.DeepSkyBlue;
+            this.Desplegable.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.Desplegable.IndicatorThickness = 2;
+            this.Desplegable.IsDropdownOpened = false;
+            this.Desplegable.ItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Desplegable.ItemBorderColor = System.Drawing.Color.White;
+            this.Desplegable.ItemForeColor = System.Drawing.Color.White;
+            this.Desplegable.ItemHeight = 26;
+            this.Desplegable.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.Desplegable.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.Desplegable.ItemTopMargin = 3;
+            this.Desplegable.Location = new System.Drawing.Point(28, 33);
+            this.Desplegable.Name = "Desplegable";
+            this.Desplegable.Size = new System.Drawing.Size(220, 32);
+            this.Desplegable.TabIndex = 92;
+            this.Desplegable.Tag = "";
+            this.Desplegable.Text = "Seleccionar";
+            this.Desplegable.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.Desplegable.TextLeftMargin = 5;
+            this.Desplegable.SelectedIndexChanged += new System.EventHandler(this.Dropdown1_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -405,11 +397,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges9;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Empty;
@@ -478,75 +470,6 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
-            // Txt_Teléfono
-            // 
-            this.Txt_Teléfono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Txt_Teléfono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Txt_Teléfono.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Txt_Teléfono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_Teléfono.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Txt_Teléfono.ForeColor = System.Drawing.Color.White;
-            this.Txt_Teléfono.HintForeColor = System.Drawing.Color.White;
-            this.Txt_Teléfono.HintText = "";
-            this.Txt_Teléfono.isPassword = false;
-            this.Txt_Teléfono.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
-            this.Txt_Teléfono.LineIdleColor = System.Drawing.Color.Gray;
-            this.Txt_Teléfono.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
-            this.Txt_Teléfono.LineThickness = 3;
-            this.Txt_Teléfono.Location = new System.Drawing.Point(299, 41);
-            this.Txt_Teléfono.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_Teléfono.MaxLength = 32767;
-            this.Txt_Teléfono.Name = "Txt_Teléfono";
-            this.Txt_Teléfono.Size = new System.Drawing.Size(105, 28);
-            this.Txt_Teléfono.TabIndex = 83;
-            this.Txt_Teléfono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // Txt_Identificacion
-            // 
-            this.Txt_Identificacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Txt_Identificacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Txt_Identificacion.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Txt_Identificacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_Identificacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Txt_Identificacion.ForeColor = System.Drawing.Color.White;
-            this.Txt_Identificacion.HintForeColor = System.Drawing.Color.White;
-            this.Txt_Identificacion.HintText = "";
-            this.Txt_Identificacion.isPassword = false;
-            this.Txt_Identificacion.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
-            this.Txt_Identificacion.LineIdleColor = System.Drawing.Color.Gray;
-            this.Txt_Identificacion.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
-            this.Txt_Identificacion.LineThickness = 3;
-            this.Txt_Identificacion.Location = new System.Drawing.Point(105, 41);
-            this.Txt_Identificacion.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_Identificacion.MaxLength = 32767;
-            this.Txt_Identificacion.Name = "Txt_Identificacion";
-            this.Txt_Identificacion.Size = new System.Drawing.Size(114, 28);
-            this.Txt_Identificacion.TabIndex = 80;
-            this.Txt_Identificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // Txt_Nombre
-            // 
-            this.Txt_Nombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.Txt_Nombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.Txt_Nombre.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.Txt_Nombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_Nombre.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.Txt_Nombre.ForeColor = System.Drawing.Color.White;
-            this.Txt_Nombre.HintForeColor = System.Drawing.Color.White;
-            this.Txt_Nombre.HintText = "";
-            this.Txt_Nombre.isPassword = false;
-            this.Txt_Nombre.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
-            this.Txt_Nombre.LineIdleColor = System.Drawing.Color.Gray;
-            this.Txt_Nombre.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
-            this.Txt_Nombre.LineThickness = 3;
-            this.Txt_Nombre.Location = new System.Drawing.Point(75, 5);
-            this.Txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_Nombre.MaxLength = 32767;
-            this.Txt_Nombre.Name = "Txt_Nombre";
-            this.Txt_Nombre.Size = new System.Drawing.Size(329, 28);
-            this.Txt_Nombre.TabIndex = 79;
-            this.Txt_Nombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -603,75 +526,69 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.DataGrid1);
+            this.panel7.Controls.Add(this.Dgv_Clientes);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 43);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1010, 328);
             this.panel7.TabIndex = 1;
             // 
-            // DataGrid1
+            // Dgv_Clientes
             // 
-            this.DataGrid1.AllowUserToAddRows = false;
-            this.DataGrid1.AllowUserToDeleteRows = false;
-            this.DataGrid1.AllowUserToOrderColumns = true;
-            this.DataGrid1.AllowUserToResizeColumns = false;
-            this.DataGrid1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
-            this.DataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGrid1.ColumnHeadersHeight = 30;
-            this.DataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.DataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nombres,
-            this.Identificación,
-            this.Teléfono,
-            this.Se_agrego_el});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(82)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGrid1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.DataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGrid1.DoubleBuffered = true;
-            this.DataGrid1.EnableHeadersVisualStyles = false;
-            this.DataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.DataGrid1.HeaderForeColor = System.Drawing.Color.White;
-            this.DataGrid1.Location = new System.Drawing.Point(0, 0);
-            this.DataGrid1.Name = "DataGrid1";
-            this.DataGrid1.ReadOnly = true;
-            this.DataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.DataGrid1.RowHeadersVisible = false;
-            this.DataGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DataGrid1.RowTemplate.ReadOnly = true;
-            this.DataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGrid1.Size = new System.Drawing.Size(1010, 328);
-            this.DataGrid1.TabIndex = 112;
+            this.Dgv_Clientes.AllowUserToAddRows = false;
+            this.Dgv_Clientes.AllowUserToDeleteRows = false;
+            this.Dgv_Clientes.AllowUserToOrderColumns = true;
+            this.Dgv_Clientes.AllowUserToResizeColumns = false;
+            this.Dgv_Clientes.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgv_Clientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.Dgv_Clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_Clientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(28)))), ((int)(((byte)(44)))));
+            this.Dgv_Clientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dgv_Clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.Dgv_Clientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.Dgv_Clientes.ColumnHeadersHeight = 30;
+            this.Dgv_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(82)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgv_Clientes.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Dgv_Clientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Dgv_Clientes.DoubleBuffered = true;
+            this.Dgv_Clientes.EnableHeadersVisualStyles = false;
+            this.Dgv_Clientes.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Dgv_Clientes.HeaderForeColor = System.Drawing.Color.White;
+            this.Dgv_Clientes.Location = new System.Drawing.Point(0, 0);
+            this.Dgv_Clientes.Name = "Dgv_Clientes";
+            this.Dgv_Clientes.ReadOnly = true;
+            this.Dgv_Clientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.Dgv_Clientes.RowHeadersVisible = false;
+            this.Dgv_Clientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.Dgv_Clientes.RowTemplate.ReadOnly = true;
+            this.Dgv_Clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_Clientes.Size = new System.Drawing.Size(1010, 328);
+            this.Dgv_Clientes.TabIndex = 112;
             // 
             // panel6
             // 
@@ -714,11 +631,11 @@
             this.Btn_Eliminar.ColorContrastOnClick = 45;
             this.Btn_Eliminar.ColorContrastOnHover = 45;
             this.Btn_Eliminar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Btn_Eliminar.CustomizableEdges = borderEdges2;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.Btn_Eliminar.CustomizableEdges = borderEdges10;
             this.Btn_Eliminar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Eliminar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Eliminar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -805,11 +722,11 @@
             this.Btn_Editar.ColorContrastOnClick = 45;
             this.Btn_Editar.ColorContrastOnHover = 45;
             this.Btn_Editar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.Btn_Editar.CustomizableEdges = borderEdges3;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.Btn_Editar.CustomizableEdges = borderEdges11;
             this.Btn_Editar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Editar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Editar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -896,11 +813,11 @@
             this.Btn_Agregar.ColorContrastOnClick = 45;
             this.Btn_Agregar.ColorContrastOnHover = 45;
             this.Btn_Agregar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.Btn_Agregar.CustomizableEdges = borderEdges4;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.Btn_Agregar.CustomizableEdges = borderEdges12;
             this.Btn_Agregar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Btn_Agregar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Btn_Agregar.DisabledFillColor = System.Drawing.Color.Empty;
@@ -967,6 +884,7 @@
             this.Btn_Agregar.TextMarginLeft = 0;
             this.Btn_Agregar.TextPadding = new System.Windows.Forms.Padding(0);
             this.Btn_Agregar.UseDefaultRadiusAndThickness = true;
+            this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
             // 
             // bunifuTextBox1
             // 
@@ -1004,26 +922,26 @@
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
-            stateProperties12.ForeColor = System.Drawing.Color.White;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties12;
+            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties33.FillColor = System.Drawing.Color.Empty;
+            stateProperties33.ForeColor = System.Drawing.Color.Empty;
+            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties34;
+            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.FillColor = System.Drawing.Color.Empty;
+            stateProperties35.ForeColor = System.Drawing.Color.Empty;
+            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
+            stateProperties36.ForeColor = System.Drawing.Color.White;
+            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties36;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(207)))), ((int)(((byte)(237)))));
@@ -1067,52 +985,74 @@
             this.PnTop.Size = new System.Drawing.Size(1010, 40);
             this.PnTop.TabIndex = 2;
             // 
-            // Reg_CLiente_borde
+            // Txt_Teléfono
             // 
-            this.Reg_CLiente_borde.ElipseRadius = 16;
+            this.Txt_Teléfono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Txt_Teléfono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Txt_Teléfono.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_Teléfono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_Teléfono.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Txt_Teléfono.ForeColor = System.Drawing.Color.White;
+            this.Txt_Teléfono.HintForeColor = System.Drawing.Color.White;
+            this.Txt_Teléfono.HintText = "";
+            this.Txt_Teléfono.isPassword = false;
+            this.Txt_Teléfono.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
+            this.Txt_Teléfono.LineIdleColor = System.Drawing.Color.Gray;
+            this.Txt_Teléfono.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
+            this.Txt_Teléfono.LineThickness = 3;
+            this.Txt_Teléfono.Location = new System.Drawing.Point(299, 41);
+            this.Txt_Teléfono.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_Teléfono.MaxLength = 32767;
+            this.Txt_Teléfono.Name = "Txt_Teléfono";
+            this.Txt_Teléfono.Size = new System.Drawing.Size(105, 28);
+            this.Txt_Teléfono.TabIndex = 83;
+            this.Txt_Teléfono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Se_agrego_el
+            // Txt_Nombre
             // 
-            this.Se_agrego_el.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Se_agrego_el.FillWeight = 44F;
-            this.Se_agrego_el.HeaderText = "Fecha ingreso";
-            this.Se_agrego_el.Name = "Se_agrego_el";
-            this.Se_agrego_el.ReadOnly = true;
+            this.Txt_Nombre.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Txt_Nombre.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Txt_Nombre.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_Nombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_Nombre.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Txt_Nombre.ForeColor = System.Drawing.Color.White;
+            this.Txt_Nombre.HintForeColor = System.Drawing.Color.White;
+            this.Txt_Nombre.HintText = "";
+            this.Txt_Nombre.isPassword = false;
+            this.Txt_Nombre.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
+            this.Txt_Nombre.LineIdleColor = System.Drawing.Color.Gray;
+            this.Txt_Nombre.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
+            this.Txt_Nombre.LineThickness = 3;
+            this.Txt_Nombre.Location = new System.Drawing.Point(75, 5);
+            this.Txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_Nombre.MaxLength = 32767;
+            this.Txt_Nombre.Name = "Txt_Nombre";
+            this.Txt_Nombre.Size = new System.Drawing.Size(329, 28);
+            this.Txt_Nombre.TabIndex = 79;
+            this.Txt_Nombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // Teléfono
+            // Txt_Identificacion
             // 
-            this.Teléfono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Teléfono.FillWeight = 40F;
-            this.Teléfono.HeaderText = "Telefono";
-            this.Teléfono.Name = "Teléfono";
-            this.Teléfono.ReadOnly = true;
-            this.Teléfono.ToolTipText = "0";
-            // 
-            // Identificación
-            // 
-            this.Identificación.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Identificación.FillWeight = 40F;
-            this.Identificación.HeaderText = "Identificacion";
-            this.Identificación.Name = "Identificación";
-            this.Identificación.ReadOnly = true;
-            // 
-            // Nombres
-            // 
-            this.Nombres.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nombres.FillWeight = 130F;
-            this.Nombres.HeaderText = "Nombres";
-            this.Nombres.Name = "Nombres";
-            this.Nombres.ReadOnly = true;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ID.FillWeight = 15F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
+            this.Txt_Identificacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.Txt_Identificacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.Txt_Identificacion.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.Txt_Identificacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Txt_Identificacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Txt_Identificacion.ForeColor = System.Drawing.Color.White;
+            this.Txt_Identificacion.HintForeColor = System.Drawing.Color.White;
+            this.Txt_Identificacion.HintText = "";
+            this.Txt_Identificacion.isPassword = false;
+            this.Txt_Identificacion.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
+            this.Txt_Identificacion.LineIdleColor = System.Drawing.Color.Gray;
+            this.Txt_Identificacion.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(112)))), ((int)(((byte)(233)))));
+            this.Txt_Identificacion.LineThickness = 3;
+            this.Txt_Identificacion.Location = new System.Drawing.Point(105, 41);
+            this.Txt_Identificacion.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_Identificacion.MaxLength = 32767;
+            this.Txt_Identificacion.Name = "Txt_Identificacion";
+            this.Txt_Identificacion.Size = new System.Drawing.Size(114, 28);
+            this.Txt_Identificacion.TabIndex = 80;
+            this.Txt_Identificacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Clientes
             // 
@@ -1127,6 +1067,7 @@
             this.Name = "Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.panel1.ResumeLayout(false);
             this.Pnseleccion.ResumeLayout(false);
             this.Pnseleccion.PerformLayout();
@@ -1134,7 +1075,7 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Clientes)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.PnTop.ResumeLayout(false);
@@ -1146,38 +1087,32 @@
         #endregion
         internal System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Pnseleccion;
-        internal System.Windows.Forms.Label label5;
-        internal System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Teléfono;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Identificacion;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Nombre;
-        internal System.Windows.Forms.Label label14;
-        internal System.Windows.Forms.Label label17;
-        internal System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
-        internal System.Windows.Forms.Label label4;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid DataGrid1;
-        private Bunifu.UI.WinForms.BunifuDropdown Dropdown1;
-        private Bunifu.UI.WinForms.BunifuTextBox Text_Cant;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Agregar;
         private System.Windows.Forms.Panel panel2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Panel PnTop;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Eliminar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private Bunifu.UI.WinForms.BunifuDropdown Desplegable;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Agregar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Editar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_Eliminar;
+        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+        internal System.Windows.Forms.Label label17;
+        internal System.Windows.Forms.Label label15;
+        internal System.Windows.Forms.Label label14;
+        internal System.Windows.Forms.Label label3;
         internal System.Windows.Forms.Label Lb_price;
-        private Bunifu.UI.WinForms.BunifuTextBox Text_Price;
-        private Bunifu.Framework.UI.BunifuElipse Reg_CLiente_borde;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombres;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Identificación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Teléfono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Se_agrego_el;
+        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid Dgv_Clientes;
+        internal Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Teléfono;
+        internal Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Identificacion;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox Txt_Nombre;
+        internal Bunifu.UI.WinForms.BunifuTextBox Text_Price;
+        internal Bunifu.UI.WinForms.BunifuTextBox Text_Cant;
     }
 }

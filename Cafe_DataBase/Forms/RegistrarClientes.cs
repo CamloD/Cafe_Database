@@ -18,12 +18,7 @@ namespace Cafe_DataBase.Forms
 {
     public partial class RegistrarClientes : Form
     {
-        public string SearchText
-    {
-        get { return _searchText; }
-        set { _searchText = value; }
-    }
-
+        
         private string _searchText;
 
         public RegistrarClientes()
@@ -131,6 +126,7 @@ namespace Cafe_DataBase.Forms
                 fecha = Convert.ToDateTime(Dgv_registro.CurrentRow.Cells["fecha_registro"].Value);
             }
         }
+
 
 
         #endregion  //--------------------------------------------------------------------------------------------
