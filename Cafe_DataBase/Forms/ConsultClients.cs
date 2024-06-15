@@ -22,7 +22,9 @@ namespace Cafe_DataBase.Forms
         #region "Mis variables"
         private bool formato_ar_ejecutado = false;
         public int valor = 0;
-        string nombre, telefono, identificacion, names;
+        internal string nombre, telefono, identificacion;
+        internal int accion = 0;
+        int inicio_Valor = 0;
         #endregion
 
         #region "Procesos"
@@ -49,6 +51,11 @@ namespace Cafe_DataBase.Forms
                 formato_ar_ejecutado = true;
             }
 
+        }
+
+        internal void inicioCuadro(int dat)
+        {
+            inicio_Valor = dat;
         }
         #endregion  // ---------------------------------------------------------------------------------------------------------------------
 
@@ -106,15 +113,45 @@ namespace Cafe_DataBase.Forms
         private void Btn_seleccionar_Click(object sender, EventArgs e)
         {
             Clientes clientesForm = new Clientes();
+            Form1 formulario1 = new Form1();
+            Form2 formulario2 = new Form2();
 
 
-            clientesForm.Txt_Nombre.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["nombre"].Value.ToString();
-            clientesForm.Txt_Identificacion.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["identificacion"].Value.ToString();
-            clientesForm.Txt_Teléfono.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["telefono"].Value.ToString();
+            //clientesForm.Txt_Nombre.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["nombre"].Value.ToString();
+            //clientesForm.Txt_Identificacion.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["identificacion"].Value.ToString();
+            //clientesForm.Txt_Teléfono.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["telefono"].Value.ToString();
 
-            
-            
+            //clientesForm.txt_prueba.Text = Dgv_ClientesRegistrados.CurrentRow.Cells["nombre"].Value.ToString();
 
+            nombre = Dgv_ClientesRegistrados.CurrentRow.Cells["nombre"].Value.ToString();
+            identificacion = Dgv_ClientesRegistrados.CurrentRow.Cells["identificacion"].Value.ToString();
+            telefono = Dgv_ClientesRegistrados.CurrentRow.Cells["telefono"].Value.ToString();
+
+
+            if (inicio_Valor == 1)
+            {
+                //clientesForm.recogerData(nombre, identificacion, telefono);
+            }
+            if (inicio_Valor == 2)
+            {
+                formulario1.recogerdata(nombre, identificacion, telefono);
+                formulario1.MostrarData();
+                formulario1.textBox1.Text = nombre;
+                formulario1.textBox1.Update();
+                formulario1.textBox1.Refresh();
+
+                formulario1.button2.PerformClick();
+                formulario1.button2.PerformClick();
+                formulario1.button2.PerformClick();
+
+
+
+
+            }
+            if (inicio_Valor == 3)
+            {
+               
+            }
 
             // Cerrar el formulario actual
             this.Close();

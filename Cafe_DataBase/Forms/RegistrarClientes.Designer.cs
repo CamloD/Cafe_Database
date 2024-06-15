@@ -1381,11 +1381,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox TxtBuscar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_BuscarGrid;
         private Bunifu.Framework.UI.BunifuCustomDataGrid Dgv_registro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_nuevo;
         private Bunifu.UI.WinForms.BunifuTextBox Txt_ID;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;

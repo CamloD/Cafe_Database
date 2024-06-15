@@ -19,8 +19,6 @@ namespace Cafe_DataBase.Forms
     public partial class RegistrarClientes : Form
     {
         
-        private string _searchText;
-
         public RegistrarClientes()
         {
             InitializeComponent();

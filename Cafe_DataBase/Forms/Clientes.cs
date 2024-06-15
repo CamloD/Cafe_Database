@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.UI.WinForms;
 using Cafe_DataBase.logica;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace Cafe_DataBase.Forms
 {
@@ -25,8 +24,14 @@ namespace Cafe_DataBase.Forms
         }
 
         #region "Variables"
-        string name, ident, tel;
+        internal string name, ident, tel;
+        int inicializado = 0;
 
+        private bool formato_ar_ejecutado = false;
+        public int valor = 0;
+        internal string nombre, telefono, identificacion;
+        internal int accion = 0;
+        int inicio_Valor = 0;
         #endregion
 
 
@@ -66,9 +71,21 @@ namespace Cafe_DataBase.Forms
 
         private void ProcesosIniciales()
         {
-           // Txt_Nombre.Enabled = false;
-           // Txt_Identificacion.Enabled = false;
-           // Txt_Teléfono.Enabled = false;
+            if (inicializado == 0)
+            {
+                Txt_Nombre.Enabled = false;
+                Txt_Identificacion.Enabled = false;
+                Txt_Teléfono.Enabled = false;
+
+                inicializado = 1;
+            }else
+            {
+               // InitializeComponent();
+                //txt_prueba.Text = name;
+                txt_prueba.Text = "name";
+
+            }
+             
         }
 
         private void DisenoPersonalizado()
@@ -88,16 +105,80 @@ namespace Cafe_DataBase.Forms
             Text_Price.Enabled = false;
         }
 
+
+        /* internal void recogerData(string data1, string data2, string data3)
+         {
+             name = data1;
+             ident = data2;
+             tel = data3;
+
+             txt_prueba.Text = data1;
+         }*/
+
+        private void Formato_clientes1()
+        {
+            Dgv_ClientesRegistrados.Columns[0].Width = 25;
+            Dgv_ClientesRegistrados.Columns[0].HeaderText = "ID";
+            Dgv_ClientesRegistrados.Columns[1].Width = 120;
+            Dgv_ClientesRegistrados.Columns[1].HeaderText = "Nombres";
+            Dgv_ClientesRegistrados.Columns[2].Width = 60;
+            Dgv_ClientesRegistrados.Columns[2].HeaderText = "Identificacion";
+            Dgv_ClientesRegistrados.Columns[3].Width = 60;
+            Dgv_ClientesRegistrados.Columns[3].HeaderText = "Telefono";
+            Dgv_ClientesRegistrados.Columns[4].Width = 200;
+            Dgv_ClientesRegistrados.Columns[4].HeaderText = "Fecha Ingreso";
+        }
+        private void listado_registro(string texto)
+        {
+            L_Proceso_Registro Datos = new L_Proceso_Registro();
+            Dgv_ClientesRegistrados.DataSource = Datos.Listado_registro(texto);
+            if (!formato_ar_ejecutado)
+            {
+                this.Formato_clientes1();
+                formato_ar_ejecutado = true;
+            }
+
+        }
+
+        internal void inicioCuadro(int dat)
+        {
+            inicio_Valor = dat;
+        }
+
         #endregion  // ----------------------------------------------------------------------------------------------
 
         private void Clientes_Load(object sender, EventArgs e)
         {
-            listado_clientes("%");   
+            listado_clientes("%");
+
+            this.listado_registro("%"); // Porcentaje para mostrar algo
+            txt_Buscar2.PlaceholderText = "Buscar";
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            consultClients.ShowDialog();
+            /*ConsultClients consultarClientes = new ConsultClients();
+            consultClients.inicioCuadro(1);
+            consultClients.ShowDialog();*/
+
+            ListCLientes.Visible = true;
+            
+        }
+
+        private void Clientes_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void Btn_Cerrar_Click(object sender, EventArgs e)
+        {
+           ListCLientes.Visible = false;
+        }
+
+        private void Btn_cancelar_Click(object sender, EventArgs e)
+        {
+            ListCLientes.Visible = false;
+            txt_Buscar2.Text = "";
         }
 
         private void Btn_Agregar_Click(object sender, EventArgs e)
@@ -147,10 +228,6 @@ namespace Cafe_DataBase.Forms
             }
         }
 
-        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         
     }

@@ -18,6 +18,7 @@ namespace Cafe_DataBase.Forms
         Clientes Clientes;
         RegistrarClientes RegClient;
         Form1 form1;
+        Form2 form2;
 
 
         public MenuPrincipal()
@@ -27,6 +28,7 @@ namespace Cafe_DataBase.Forms
             AdjustForm();
 
             form1 = new Form1();
+            form2 = new Form2();
             RegClient = new RegistrarClientes();
             Clientes = new Clientes();
             totalProductos = new Totalcafe();
@@ -45,7 +47,7 @@ namespace Cafe_DataBase.Forms
         #region "Variables"
         private int BorderSize = 0;
         private Size formSize;
-        private Size sizess;
+        //private Size sizess;
 
         #endregion
 
@@ -112,7 +114,7 @@ namespace Cafe_DataBase.Forms
             }
         }
 
-        private void AbrirFormH1(object formH1)
+        internal void AbrirFormH1(object formH1)
         {
             if (this.panel_centro.Controls.Count > 0)
             {
@@ -129,12 +131,12 @@ namespace Cafe_DataBase.Forms
 
         private void MenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Quieres salir de la Aplicación?", "Cerrar Aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+           /* if (MessageBox.Show("Quieres salir de la Aplicación?", "Cerrar Aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Environment.Exit(0);
             }
             else
-            { e.Cancel = true; }
+            { e.Cancel = true; }*/
         }
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)
@@ -184,8 +186,8 @@ namespace Cafe_DataBase.Forms
 
         private void Clients_Click(object sender, EventArgs e)
         {
-            //AbrirFormH1(new Clientes());
-            Clientes.Show();
+            AbrirFormH1(new Clientes());
+            //Clientes.Show();
             //Clientes.ShowDialog();
         }
 
@@ -198,14 +200,16 @@ namespace Cafe_DataBase.Forms
         {
             form1.Show();
             //...
-            //AbrirFormH1(new forma1());
+            //AbrirFormH1(new Form1());
             //..
             hideSubMenu();
         }
 
         private void cafe_seco_Click(object sender, EventArgs e)
         {
-
+            form2.Show();
+            //...
+            //AbrirFormH1(new Form1());
             //...
             //Code
             //..

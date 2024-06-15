@@ -43,29 +43,29 @@
             this.Elipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Control2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.Label1 = new System.Windows.Forms.Label();
             this.Control3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.pBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Control1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.PnTop = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Btn_Cerrar = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PnData = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn_cancelar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Txt_buscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_seleccionar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.pBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Btn_Cerrar = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.PnTop = new System.Windows.Forms.Panel();
             this.Dgv_ClientesRegistrados = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
-            this.PnTop.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.PnData.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.PnTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Elipse2
@@ -85,33 +85,12 @@
             this.Control2.TargetControl = this.Label1;
             this.Control2.Vertical = true;
             // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Label1.Location = new System.Drawing.Point(47, 4);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(248, 33);
-            this.Label1.TabIndex = 1;
-            this.Label1.Text = "Lista de Clientes";
-            // 
             // Control3
             // 
             this.Control3.Fixed = true;
             this.Control3.Horizontal = true;
             this.Control3.TargetControl = this.pBox1;
             this.Control3.Vertical = true;
-            // 
-            // pBox1
-            // 
-            this.pBox1.Image = ((System.Drawing.Image)(resources.GetObject("pBox1.Image")));
-            this.pBox1.Location = new System.Drawing.Point(6, 3);
-            this.pBox1.Name = "pBox1";
-            this.pBox1.Size = new System.Drawing.Size(35, 34);
-            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox1.TabIndex = 79;
-            this.pBox1.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -124,62 +103,6 @@
             this.Control1.Horizontal = true;
             this.Control1.TargetControl = this.PnTop;
             this.Control1.Vertical = true;
-            // 
-            // PnTop
-            // 
-            this.PnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(136)))), ((int)(((byte)(179)))));
-            this.PnTop.Controls.Add(this.panel2);
-            this.PnTop.Controls.Add(this.pBox1);
-            this.PnTop.Controls.Add(this.Label1);
-            this.PnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnTop.Location = new System.Drawing.Point(0, 0);
-            this.PnTop.Name = "PnTop";
-            this.PnTop.Size = new System.Drawing.Size(1000, 40);
-            this.PnTop.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Btn_Cerrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(927, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(73, 40);
-            this.panel2.TabIndex = 81;
-            // 
-            // Btn_Cerrar
-            // 
-            this.Btn_Cerrar.ActiveImage = null;
-            this.Btn_Cerrar.AllowAnimations = true;
-            this.Btn_Cerrar.AllowBuffering = false;
-            this.Btn_Cerrar.AllowToggling = false;
-            this.Btn_Cerrar.AllowZooming = true;
-            this.Btn_Cerrar.AllowZoomingOnFocus = false;
-            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Cerrar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Btn_Cerrar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.ErrorImage")));
-            this.Btn_Cerrar.FadeWhenInactive = false;
-            this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.ImageActive = null;
-            this.Btn_Cerrar.ImageLocation = null;
-            this.Btn_Cerrar.ImageMargin = 0;
-            this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
-            this.Btn_Cerrar.ImageZoomSize = new System.Drawing.Size(24, 24);
-            this.Btn_Cerrar.InitialImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.InitialImage")));
-            this.Btn_Cerrar.Location = new System.Drawing.Point(37, 10);
-            this.Btn_Cerrar.Name = "Btn_Cerrar";
-            this.Btn_Cerrar.Rotation = 0;
-            this.Btn_Cerrar.ShowActiveImage = true;
-            this.Btn_Cerrar.ShowCursorChanges = true;
-            this.Btn_Cerrar.ShowImageBorders = true;
-            this.Btn_Cerrar.ShowSizeMarkers = false;
-            this.Btn_Cerrar.Size = new System.Drawing.Size(24, 24);
-            this.Btn_Cerrar.TabIndex = 0;
-            this.Btn_Cerrar.ToolTipText = "";
-            this.Btn_Cerrar.WaitOnLoad = false;
-            this.Btn_Cerrar.Zoom = 0;
-            this.Btn_Cerrar.ZoomSpeed = 10;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
             // bunifuElipse2
             // 
@@ -471,16 +394,82 @@
             this.Btn_seleccionar.UseDefaultRadiusAndThickness = true;
             this.Btn_seleccionar.Click += new System.EventHandler(this.Btn_seleccionar_Click);
             // 
-            // panel3
+            // Label1
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(105)))), ((int)(((byte)(153)))));
-            this.panel3.Controls.Add(this.Dgv_ClientesRegistrados);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 123);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(5);
-            this.panel3.Size = new System.Drawing.Size(1000, 464);
-            this.panel3.TabIndex = 10;
+            this.Label1.AutoSize = true;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Label1.Location = new System.Drawing.Point(47, 4);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(248, 33);
+            this.Label1.TabIndex = 1;
+            this.Label1.Text = "Lista de Clientes";
+            // 
+            // pBox1
+            // 
+            this.pBox1.Image = ((System.Drawing.Image)(resources.GetObject("pBox1.Image")));
+            this.pBox1.Location = new System.Drawing.Point(6, 3);
+            this.pBox1.Name = "pBox1";
+            this.pBox1.Size = new System.Drawing.Size(35, 34);
+            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox1.TabIndex = 79;
+            this.pBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Btn_Cerrar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(927, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(73, 40);
+            this.panel2.TabIndex = 81;
+            // 
+            // Btn_Cerrar
+            // 
+            this.Btn_Cerrar.ActiveImage = null;
+            this.Btn_Cerrar.AllowAnimations = true;
+            this.Btn_Cerrar.AllowBuffering = false;
+            this.Btn_Cerrar.AllowToggling = false;
+            this.Btn_Cerrar.AllowZooming = true;
+            this.Btn_Cerrar.AllowZoomingOnFocus = false;
+            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Cerrar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Btn_Cerrar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.ErrorImage")));
+            this.Btn_Cerrar.FadeWhenInactive = false;
+            this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
+            this.Btn_Cerrar.ImageActive = null;
+            this.Btn_Cerrar.ImageLocation = null;
+            this.Btn_Cerrar.ImageMargin = 0;
+            this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
+            this.Btn_Cerrar.ImageZoomSize = new System.Drawing.Size(24, 24);
+            this.Btn_Cerrar.InitialImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.InitialImage")));
+            this.Btn_Cerrar.Location = new System.Drawing.Point(37, 10);
+            this.Btn_Cerrar.Name = "Btn_Cerrar";
+            this.Btn_Cerrar.Rotation = 0;
+            this.Btn_Cerrar.ShowActiveImage = true;
+            this.Btn_Cerrar.ShowCursorChanges = true;
+            this.Btn_Cerrar.ShowImageBorders = true;
+            this.Btn_Cerrar.ShowSizeMarkers = false;
+            this.Btn_Cerrar.Size = new System.Drawing.Size(24, 24);
+            this.Btn_Cerrar.TabIndex = 0;
+            this.Btn_Cerrar.ToolTipText = "";
+            this.Btn_Cerrar.WaitOnLoad = false;
+            this.Btn_Cerrar.Zoom = 0;
+            this.Btn_Cerrar.ZoomSpeed = 10;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
+            // 
+            // PnTop
+            // 
+            this.PnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(136)))), ((int)(((byte)(179)))));
+            this.PnTop.Controls.Add(this.panel2);
+            this.PnTop.Controls.Add(this.pBox1);
+            this.PnTop.Controls.Add(this.Label1);
+            this.PnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnTop.Location = new System.Drawing.Point(0, 0);
+            this.PnTop.Name = "PnTop";
+            this.PnTop.Size = new System.Drawing.Size(1000, 40);
+            this.PnTop.TabIndex = 6;
             // 
             // Dgv_ClientesRegistrados
             // 
@@ -539,6 +528,17 @@
             this.Dgv_ClientesRegistrados.Size = new System.Drawing.Size(990, 454);
             this.Dgv_ClientesRegistrados.TabIndex = 81;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(105)))), ((int)(((byte)(153)))));
+            this.panel3.Controls.Add(this.Dgv_ClientesRegistrados);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 123);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(5);
+            this.panel3.Size = new System.Drawing.Size(1000, 464);
+            this.panel3.TabIndex = 10;
+            // 
             // ConsultClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,14 +553,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultClients";
             this.Load += new System.EventHandler(this.ConsultClients_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
-            this.PnTop.ResumeLayout(false);
-            this.PnTop.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.PnData.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.PnTop.ResumeLayout(false);
+            this.PnTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -573,18 +573,18 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_cancelar;
         private Bunifu.UI.WinForms.BunifuTextBox Txt_buscar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Btn_seleccionar;
-        internal System.Windows.Forms.Panel PnTop;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.UI.WinForms.BunifuImageButton Btn_Cerrar;
-        private System.Windows.Forms.PictureBox pBox1;
-        internal System.Windows.Forms.Label Label1;
         private Bunifu.Framework.UI.BunifuElipse Elipse3;
         private Bunifu.Framework.UI.BunifuDragControl Control2;
         private Bunifu.Framework.UI.BunifuDragControl Control3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl Control1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        internal System.Windows.Forms.Panel PnTop;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.UI.WinForms.BunifuImageButton Btn_Cerrar;
+        private System.Windows.Forms.PictureBox pBox1;
+        internal System.Windows.Forms.Label Label1;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid Dgv_ClientesRegistrados;
+        internal Bunifu.Framework.UI.BunifuCustomDataGrid Dgv_ClientesRegistrados;
     }
 }

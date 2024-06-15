@@ -141,7 +141,6 @@
             this.House_button.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.House_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.House_button.Image = ((System.Drawing.Image)(resources.GetObject("House_button.Image")));
-            this.House_button.ImageActive = null;
             this.House_button.ImageLocation = null;
             this.House_button.ImageMargin = 0;
             this.House_button.ImageSize = new System.Drawing.Size(31, 31);
@@ -158,7 +157,6 @@
             this.House_button.TabIndex = 5;
             this.House_button.ToolTipText = "";
             this.House_button.WaitOnLoad = false;
-            this.House_button.Zoom = 0;
             this.House_button.ZoomSpeed = 10;
             this.House_button.Click += new System.EventHandler(this.House_button_Click);
             // 
@@ -224,7 +222,6 @@
             this.Btn_Normal.FadeWhenInactive = false;
             this.Btn_Normal.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Normal.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Normal.Image")));
-            this.Btn_Normal.ImageActive = null;
             this.Btn_Normal.ImageLocation = null;
             this.Btn_Normal.ImageMargin = 0;
             this.Btn_Normal.ImageSize = new System.Drawing.Size(23, 23);
@@ -241,7 +238,6 @@
             this.Btn_Normal.TabIndex = 6;
             this.Btn_Normal.ToolTipText = "";
             this.Btn_Normal.WaitOnLoad = false;
-            this.Btn_Normal.Zoom = 0;
             this.Btn_Normal.ZoomSpeed = 10;
             this.Btn_Normal.Click += new System.EventHandler(this.Btn_Normal_Click);
             // 
@@ -259,7 +255,6 @@
             this.Btn_Maximizar.FadeWhenInactive = false;
             this.Btn_Maximizar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Maximizar.Image")));
-            this.Btn_Maximizar.ImageActive = null;
             this.Btn_Maximizar.ImageLocation = null;
             this.Btn_Maximizar.ImageMargin = 0;
             this.Btn_Maximizar.ImageSize = new System.Drawing.Size(23, 23);
@@ -276,7 +271,6 @@
             this.Btn_Maximizar.TabIndex = 5;
             this.Btn_Maximizar.ToolTipText = "";
             this.Btn_Maximizar.WaitOnLoad = false;
-            this.Btn_Maximizar.Zoom = 0;
             this.Btn_Maximizar.ZoomSpeed = 10;
             this.Btn_Maximizar.Click += new System.EventHandler(this.Btn_Maximizar_Click);
             // 
@@ -295,7 +289,6 @@
             this.Btn_minimizar.FadeWhenInactive = false;
             this.Btn_minimizar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_minimizar.Image")));
-            this.Btn_minimizar.ImageActive = null;
             this.Btn_minimizar.ImageLocation = null;
             this.Btn_minimizar.ImageMargin = 0;
             this.Btn_minimizar.ImageSize = new System.Drawing.Size(23, 23);
@@ -312,7 +305,6 @@
             this.Btn_minimizar.TabIndex = 4;
             this.Btn_minimizar.ToolTipText = "";
             this.Btn_minimizar.WaitOnLoad = false;
-            this.Btn_minimizar.Zoom = 0;
             this.Btn_minimizar.ZoomSpeed = 10;
             this.Btn_minimizar.Click += new System.EventHandler(this.Btn_minimizar_Click);
             // 
@@ -331,7 +323,6 @@
             this.Btn_Cerrar.FadeWhenInactive = false;
             this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.ImageActive = null;
             this.Btn_Cerrar.ImageLocation = null;
             this.Btn_Cerrar.ImageMargin = 0;
             this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
@@ -348,7 +339,6 @@
             this.Btn_Cerrar.TabIndex = 0;
             this.Btn_Cerrar.ToolTipText = "";
             this.Btn_Cerrar.WaitOnLoad = false;
-            this.Btn_Cerrar.Zoom = 0;
             this.Btn_Cerrar.ZoomSpeed = 10;
             this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
