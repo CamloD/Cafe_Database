@@ -744,6 +744,7 @@
             this.Txt_Identificacion.TextPlaceholder = "Identificacion";
             this.Txt_Identificacion.UseSystemPasswordChar = false;
             this.Txt_Identificacion.WordWrap = true;
+            this.Txt_Identificacion.TextChange += new System.EventHandler(this.Txt_Identificacion_TextChange);
             // 
             // Txt_ID
             // 
@@ -756,7 +757,7 @@
             this.Txt_ID.BackColor = System.Drawing.Color.Transparent;
             this.Txt_ID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Txt_ID.BackgroundImage")));
             this.Txt_ID.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(234)))), ((int)(((byte)(174)))));
-            this.Txt_ID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Txt_ID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
             this.Txt_ID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Txt_ID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
             this.Txt_ID.BorderRadius = 20;
@@ -786,7 +787,7 @@
             stateProperties9.ForeColor = System.Drawing.Color.Empty;
             stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Txt_ID.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
             stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(14)))), ((int)(((byte)(26)))));
             stateProperties10.ForeColor = System.Drawing.Color.White;
             stateProperties10.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(175)))), ((int)(((byte)(191)))));

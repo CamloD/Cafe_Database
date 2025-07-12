@@ -14,9 +14,9 @@ namespace Cafe_DataBase.Modelo
         public long telefono { get; set; }
         public long identificacion { get; set; }
         public string tipo_cafe { get; set; }
-        public long precio { get; set; }
-        public long cantidad { get; set; }
-        public long total { get; set; }
+        public decimal precio { get; set; }
+        public decimal cantidad { get; set; }
+        public decimal total { get; set; }
         public DateTime fecha_proceso { get; set; }
         public DateTime fecha_registro { get; set; }
 

@@ -55,7 +55,7 @@ namespace Cafe_DataBase.logica
                     Sql_tarea = "insert into clientes(nombre, identificacion, telefono, tipo_cafe, precio, cantidad, total, fecha_proceso) " +
                                    " values('" + oPro.nombre + "', '" + oPro.identificacion +
                                    "', '" + oPro.telefono + "','"+ oPro.tipo_cafe +"', '" + oPro.precio +
-                                   "', '" + oPro.cantidad + "', '" + oPro.total + "', , '" + oPro.fecha_proceso + "')"
+                                   "', '" + oPro.cantidad + "', '" + oPro.total + "', '" + oPro.fecha_proceso + "')"
                                    ;
                 }
                 else // Actulizar Registro

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultClients));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -36,35 +40,31 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Elipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Dgv_ClientesRegistrados = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Control2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Label1 = new System.Windows.Forms.Label();
             this.Control3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Control1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.PnTop = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Btn_Cerrar = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PnData = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn_cancelar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Txt_buscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.Btn_seleccionar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.pBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Btn_Cerrar = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.PnTop = new System.Windows.Forms.Panel();
-            this.Dgv_ClientesRegistrados = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel3 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
+            this.PnTop.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.PnData.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.PnTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +78,63 @@
             this.Elipse3.ElipseRadius = 6;
             this.Elipse3.TargetControl = this.Dgv_ClientesRegistrados;
             // 
+            // Dgv_ClientesRegistrados
+            // 
+            this.Dgv_ClientesRegistrados.AllowUserToAddRows = false;
+            this.Dgv_ClientesRegistrados.AllowUserToDeleteRows = false;
+            this.Dgv_ClientesRegistrados.AllowUserToOrderColumns = true;
+            this.Dgv_ClientesRegistrados.AllowUserToResizeColumns = false;
+            this.Dgv_ClientesRegistrados.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgv_ClientesRegistrados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_ClientesRegistrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_ClientesRegistrados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(59)))), ((int)(((byte)(95)))));
+            this.Dgv_ClientesRegistrados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dgv_ClientesRegistrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.Dgv_ClientesRegistrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_ClientesRegistrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_ClientesRegistrados.ColumnHeadersHeight = 30;
+            this.Dgv_ClientesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(82)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgv_ClientesRegistrados.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Dgv_ClientesRegistrados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Dgv_ClientesRegistrados.DoubleBuffered = true;
+            this.Dgv_ClientesRegistrados.EnableHeadersVisualStyles = false;
+            this.Dgv_ClientesRegistrados.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
+            this.Dgv_ClientesRegistrados.HeaderForeColor = System.Drawing.Color.White;
+            this.Dgv_ClientesRegistrados.Location = new System.Drawing.Point(5, 5);
+            this.Dgv_ClientesRegistrados.Name = "Dgv_ClientesRegistrados";
+            this.Dgv_ClientesRegistrados.ReadOnly = true;
+            this.Dgv_ClientesRegistrados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_ClientesRegistrados.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.Dgv_ClientesRegistrados.RowHeadersVisible = false;
+            this.Dgv_ClientesRegistrados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.Dgv_ClientesRegistrados.RowTemplate.ReadOnly = true;
+            this.Dgv_ClientesRegistrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_ClientesRegistrados.Size = new System.Drawing.Size(990, 454);
+            this.Dgv_ClientesRegistrados.TabIndex = 81;
+            // 
             // Control2
             // 
             this.Control2.Fixed = true;
@@ -85,12 +142,33 @@
             this.Control2.TargetControl = this.Label1;
             this.Control2.Vertical = true;
             // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Label1.Location = new System.Drawing.Point(47, 4);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(248, 33);
+            this.Label1.TabIndex = 1;
+            this.Label1.Text = "Lista de Clientes";
+            // 
             // Control3
             // 
             this.Control3.Fixed = true;
             this.Control3.Horizontal = true;
             this.Control3.TargetControl = this.pBox1;
             this.Control3.Vertical = true;
+            // 
+            // pBox1
+            // 
+            this.pBox1.Image = ((System.Drawing.Image)(resources.GetObject("pBox1.Image")));
+            this.pBox1.Location = new System.Drawing.Point(6, 3);
+            this.pBox1.Name = "pBox1";
+            this.pBox1.Size = new System.Drawing.Size(35, 34);
+            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBox1.TabIndex = 79;
+            this.pBox1.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -103,6 +181,62 @@
             this.Control1.Horizontal = true;
             this.Control1.TargetControl = this.PnTop;
             this.Control1.Vertical = true;
+            // 
+            // PnTop
+            // 
+            this.PnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(136)))), ((int)(((byte)(179)))));
+            this.PnTop.Controls.Add(this.panel2);
+            this.PnTop.Controls.Add(this.pBox1);
+            this.PnTop.Controls.Add(this.Label1);
+            this.PnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnTop.Location = new System.Drawing.Point(0, 0);
+            this.PnTop.Name = "PnTop";
+            this.PnTop.Size = new System.Drawing.Size(1000, 40);
+            this.PnTop.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Btn_Cerrar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(927, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(73, 40);
+            this.panel2.TabIndex = 81;
+            // 
+            // Btn_Cerrar
+            // 
+            this.Btn_Cerrar.ActiveImage = null;
+            this.Btn_Cerrar.AllowAnimations = true;
+            this.Btn_Cerrar.AllowBuffering = false;
+            this.Btn_Cerrar.AllowToggling = false;
+            this.Btn_Cerrar.AllowZooming = true;
+            this.Btn_Cerrar.AllowZoomingOnFocus = false;
+            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Cerrar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Btn_Cerrar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.ErrorImage")));
+            this.Btn_Cerrar.FadeWhenInactive = false;
+            this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
+            this.Btn_Cerrar.ImageActive = null;
+            this.Btn_Cerrar.ImageLocation = null;
+            this.Btn_Cerrar.ImageMargin = 0;
+            this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
+            this.Btn_Cerrar.ImageZoomSize = new System.Drawing.Size(24, 24);
+            this.Btn_Cerrar.InitialImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.InitialImage")));
+            this.Btn_Cerrar.Location = new System.Drawing.Point(37, 10);
+            this.Btn_Cerrar.Name = "Btn_Cerrar";
+            this.Btn_Cerrar.Rotation = 0;
+            this.Btn_Cerrar.ShowActiveImage = true;
+            this.Btn_Cerrar.ShowCursorChanges = true;
+            this.Btn_Cerrar.ShowImageBorders = true;
+            this.Btn_Cerrar.ShowSizeMarkers = false;
+            this.Btn_Cerrar.Size = new System.Drawing.Size(24, 24);
+            this.Btn_Cerrar.TabIndex = 0;
+            this.Btn_Cerrar.ToolTipText = "";
+            this.Btn_Cerrar.WaitOnLoad = false;
+            this.Btn_Cerrar.Zoom = 0;
+            this.Btn_Cerrar.ZoomSpeed = 10;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
             // bunifuElipse2
             // 
@@ -394,140 +528,6 @@
             this.Btn_seleccionar.UseDefaultRadiusAndThickness = true;
             this.Btn_seleccionar.Click += new System.EventHandler(this.Btn_seleccionar_Click);
             // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Label1.Location = new System.Drawing.Point(47, 4);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(248, 33);
-            this.Label1.TabIndex = 1;
-            this.Label1.Text = "Lista de Clientes";
-            // 
-            // pBox1
-            // 
-            this.pBox1.Image = ((System.Drawing.Image)(resources.GetObject("pBox1.Image")));
-            this.pBox1.Location = new System.Drawing.Point(6, 3);
-            this.pBox1.Name = "pBox1";
-            this.pBox1.Size = new System.Drawing.Size(35, 34);
-            this.pBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBox1.TabIndex = 79;
-            this.pBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Btn_Cerrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(927, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(73, 40);
-            this.panel2.TabIndex = 81;
-            // 
-            // Btn_Cerrar
-            // 
-            this.Btn_Cerrar.ActiveImage = null;
-            this.Btn_Cerrar.AllowAnimations = true;
-            this.Btn_Cerrar.AllowBuffering = false;
-            this.Btn_Cerrar.AllowToggling = false;
-            this.Btn_Cerrar.AllowZooming = true;
-            this.Btn_Cerrar.AllowZoomingOnFocus = false;
-            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Cerrar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Btn_Cerrar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.ErrorImage")));
-            this.Btn_Cerrar.FadeWhenInactive = false;
-            this.Btn_Cerrar.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.ImageActive = null;
-            this.Btn_Cerrar.ImageLocation = null;
-            this.Btn_Cerrar.ImageMargin = 0;
-            this.Btn_Cerrar.ImageSize = new System.Drawing.Size(23, 23);
-            this.Btn_Cerrar.ImageZoomSize = new System.Drawing.Size(24, 24);
-            this.Btn_Cerrar.InitialImage = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.InitialImage")));
-            this.Btn_Cerrar.Location = new System.Drawing.Point(37, 10);
-            this.Btn_Cerrar.Name = "Btn_Cerrar";
-            this.Btn_Cerrar.Rotation = 0;
-            this.Btn_Cerrar.ShowActiveImage = true;
-            this.Btn_Cerrar.ShowCursorChanges = true;
-            this.Btn_Cerrar.ShowImageBorders = true;
-            this.Btn_Cerrar.ShowSizeMarkers = false;
-            this.Btn_Cerrar.Size = new System.Drawing.Size(24, 24);
-            this.Btn_Cerrar.TabIndex = 0;
-            this.Btn_Cerrar.ToolTipText = "";
-            this.Btn_Cerrar.WaitOnLoad = false;
-            this.Btn_Cerrar.Zoom = 0;
-            this.Btn_Cerrar.ZoomSpeed = 10;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
-            // 
-            // PnTop
-            // 
-            this.PnTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(136)))), ((int)(((byte)(179)))));
-            this.PnTop.Controls.Add(this.panel2);
-            this.PnTop.Controls.Add(this.pBox1);
-            this.PnTop.Controls.Add(this.Label1);
-            this.PnTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnTop.Location = new System.Drawing.Point(0, 0);
-            this.PnTop.Name = "PnTop";
-            this.PnTop.Size = new System.Drawing.Size(1000, 40);
-            this.PnTop.TabIndex = 6;
-            // 
-            // Dgv_ClientesRegistrados
-            // 
-            this.Dgv_ClientesRegistrados.AllowUserToAddRows = false;
-            this.Dgv_ClientesRegistrados.AllowUserToDeleteRows = false;
-            this.Dgv_ClientesRegistrados.AllowUserToOrderColumns = true;
-            this.Dgv_ClientesRegistrados.AllowUserToResizeColumns = false;
-            this.Dgv_ClientesRegistrados.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(51)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Dgv_ClientesRegistrados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.Dgv_ClientesRegistrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Dgv_ClientesRegistrados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(59)))), ((int)(((byte)(95)))));
-            this.Dgv_ClientesRegistrados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Dgv_ClientesRegistrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.Dgv_ClientesRegistrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_ClientesRegistrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Dgv_ClientesRegistrados.ColumnHeadersHeight = 30;
-            this.Dgv_ClientesRegistrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(75)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(82)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Dgv_ClientesRegistrados.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Dgv_ClientesRegistrados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Dgv_ClientesRegistrados.DoubleBuffered = true;
-            this.Dgv_ClientesRegistrados.EnableHeadersVisualStyles = false;
-            this.Dgv_ClientesRegistrados.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(74)))), ((int)(((byte)(180)))));
-            this.Dgv_ClientesRegistrados.HeaderForeColor = System.Drawing.Color.White;
-            this.Dgv_ClientesRegistrados.Location = new System.Drawing.Point(5, 5);
-            this.Dgv_ClientesRegistrados.Name = "Dgv_ClientesRegistrados";
-            this.Dgv_ClientesRegistrados.ReadOnly = true;
-            this.Dgv_ClientesRegistrados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_ClientesRegistrados.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.Dgv_ClientesRegistrados.RowHeadersVisible = false;
-            this.Dgv_ClientesRegistrados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.Dgv_ClientesRegistrados.RowTemplate.ReadOnly = true;
-            this.Dgv_ClientesRegistrados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_ClientesRegistrados.Size = new System.Drawing.Size(990, 454);
-            this.Dgv_ClientesRegistrados.TabIndex = 81;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(105)))), ((int)(((byte)(153)))));
@@ -553,13 +553,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultClients";
             this.Load += new System.EventHandler(this.ConsultClients_Load);
-            this.PnData.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.PnTop.ResumeLayout(false);
             this.PnTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_ClientesRegistrados)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.PnData.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
